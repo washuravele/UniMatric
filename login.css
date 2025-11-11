@@ -1,0 +1,364 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+}
+
+/*login style */
+#log-in{
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* crediatials style*/
+#crediatials{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px white;
+    color: white;
+}
+
+
+/*crediatials div style*/
+#crediatials > div{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+/*anim style*/
+#aniPlay{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-right: 2px dotted;  
+}
+.img {
+    width: 90%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+  
+}
+#aniPlay > h1{
+
+}
+
+#img1{
+    border-bottom: 2px dotted white;  
+}
+
+#img1 > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("./public/imgs/pictures/matric-leaners-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px white;
+}
+
+#img2{
+    border-top: 2px dotted white;
+}
+#img2 > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("./public/imgs/pictures/matric-leaners-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px white;
+}
+
+
+
+
+/*create account style*/
+
+#Account{
+  width: 95%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px #000000;
+  display: none;
+}
+
+#AccountHeader{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}  
+
+#account-input-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn1{
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+
+
+#account-input-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#account-input-2 > select{
+  width: 95%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#account-input-5{
+  color: #000000;
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+#account-input-5 > input{
+  width: 16px;
+  height: 16px;
+}
+#account-input-5 >p{
+  font-size: 14px;
+  width: 300px;
+}
+
+#account-input-6{
+  display: flex;
+  justify-content: flex-end;
+   align-items: center;
+   gap: 10px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
+#account-input-6 >input{
+  width: 80px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+#account-input-6 >input:hover{
+  color: white;
+  background-color: #000000;
+}
+
+
+/*resert form style*/
+
+#resetAccount{
+   width: 95%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px #000000;
+  display: none;
+}
+
+
+
+
+/*id and password*/
+#id-password{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+/*form style*/
+#id-password >div> form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#id-password > div> form > input[type="text"]{
+   width: 250px;
+   height: 24px;
+}
+#id-password > div> form > input[type="button"]{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#id-password > div> form > input[type="button"]:hover{
+  color: white;
+  background-color: #000000;
+}
+
+
+
+/* text create account style*/
+#createAccount{
+    text-align: center;
+}
+#createAccount > p> span:hover{
+   text-decoration: underline;
+}
+
+/*more infor style*/
+
+#moreInfor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    /*margin-left: -200px;*/
+    /*border: 1px solid red;*/
+}
+
+#infor{
+    border: 1px solid ;
+    width: 250px;
+    text-align: center;
+    background-color: black;
+    height: 300px;
+    display: none;
+   
+}
+
+#menu{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+#menu >img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*footer style*/
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+
+#footerImg{
+    border: 1px solid black;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px ;
+}
+
+#footerImg > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+/* background gradient */
+
+.gradient-background {
+  background: linear-gradient(300deg, #2c2c2c, #f1eaea, #252325);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background2 {
+  background: linear-gradient(300deg, #000000, #000000, #f1e1f1);
+  background-size: 180% 180%;
+  animation: gradient-animation2 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-animation2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+/*fonts style*/
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight:10px;
+  font-style: normal;
+}

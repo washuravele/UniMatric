@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Caveat:wght@400..700&family=Ga+Maamli&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="gradient-background">
+
+
+    
+    <!--log-in-->
+<div id="log-in">
+
+
+   <!--Animation play, crediatials id and password-->
+    <div id="crediatials" class="gradient-background2">
+          
+        <!--animation play-->
+        <div id="aniPlay">
+            <!--img 1-->
+             <div class="img" id="img1">
+                <div></div>
+             </div>
+            <!--login header-->
+            <h1 class="roboto">Login in</h1>
+
+            <!--img 2-->
+            <div class="img" id="img2">
+                <div></div>
+            </div>
+          
+         <!--Create account form-->
+          <form name="createAccountForm" id="Account">
+
+            <!-- create account header -->
+            <div id="AccountHeader">
+                      <h3 class="roboto" style="text-decoration: underline;">Create Account</h3>
+            </div>
+            
+            <!--account input 1-->
+            <div id="account-input-1">
+                  <input class="btn1 montserrat" type="text"  placeholder="Firstname" name="firstname" id="firstname" required>
+                  <input class="btn1 montserrat" type="text" placeholder="Lastname" name="lastname" id="lastname" required>
+            </div>
+
+            <!--account input 2-->
+            <div id="account-input-1">
+                <input class="btn1 montserrat"   type="text"  placeholder="ID Number" name="id" id="IdNumber" required>
+                <input class="btn1 montserrat" type="email" placeholder="Email" name="email" id="email" required>
+            </div>
+ 
+            <!--account input 3-->
+            <div id="account-input-2">
+                  <select class="montserrat">
+                       <option>School name</option>
+                  </select>
+            </div>
+
+            <!--account input 4-->
+            <div id="account-input-1">
+                 <input class="btn1 montserrat" type="password" placeholder="Password" name="password" id="password" required>
+                 <input class="btn1 montserrat" type="password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword" required>
+            </div>
+
+            <!--account input 5-->
+            <div id="account-input-5">
+                   <input type="checkbox">
+                   <p class="montserrat">I agree to the terms and privacy policy for creating an account.</p>
+            </div>
+ 
+             <!--acoount input 6-->
+             <div id="account-input-6">
+                <input type="button"  value="Create" id="create">
+                <input type="button" value="Close" id="Close">
+             </div>
+
+          </form>
+
+         <!--reset form-->
+         <form  name="resetPassword" id="resetAccount">
+
+            <!-- create account header -->
+            <div id="AccountHeader">
+                      <h3 class="roboto" style="text-decoration: underline;">Reset Password</h3>
+            </div>
+
+            <!--create account input 1-->
+            <div id="account-input-1">
+                  <input class="btn1 montserrat" type="text"  placeholder="ID Number" name="IdNumber" id="IdNumber" required>
+                  <input class="btn1 montserrat" type="text" placeholder="Email" name="email" id="email" required>
+            </div>
+
+            <!-- create account input 2-->
+            <div id="account-input-1">
+                 <input class="btn1 montserrat" type="password" placeholder="New Password" name="newPassword" id="newPassword" required>
+                 <input class="btn1 montserrat" type="password" placeholder="Confirm New Password" name="confirmNewPassword" id="confirmNewPassword" required>
+            </div>
+ 
+            <!--acoount input 6-->
+             <div id="account-input-6">
+                <input type="button"  value="reset" id="reset">
+                <input type="button" value="Close" id="Close">
+             </div>
+
+
+         </form>
+
+
+
+        </div>
+
+        <!--id and password-->
+        <div id="id-password">
+            <!--username and password-->
+           <div>
+               <form>
+                  <input class="montserrat" type="text" name="ID"  id="ID" placeholder="ID" required>
+                 <input  class="montserrat" type="text" name="password" id="password" placeholder="password" required>
+                 <input class="montserrat" type="button" id="sign-in" value="Sign In">
+              </form>
+
+               <!--create account-->
+               <div id="createAccount">
+                   <p class="montserrat">Create <span id="accountForm" style="color: aqua; cursor: pointer; ">account</span></p>
+                    <!--forgot password-->
+                   <p class="montserrat">If forgot password press <span  id="resetForm" style="color: aqua; cursor: pointer;">reset</span> here</p>
+               </div>
+            </div>  
+
+
+        </div>
+       <!--more infor-->
+        <div id="moreInfor">
+             <div id="infor">
+                <h3 class="roboto">Login page</h3>
+                <p class="montserrat">A page that allows users first provide their id and password</p>
+                <p class="montserrat">So that they can access  the UniMatric page and see which University they qualify for</p>
+                <p class="montserrat">create an account and see which course you qualify for with your matric results</p>
+             </div>
+            <!--more infor menu-->
+            <div id="menu">
+                   <img src="./public/imgs/icons/menu.png">
+            </div>
+        </div>
+    </div>
+        
+    <!--footer-->
+    <div id="footer">
+
+        <div id="footerImg">
+               <img src="./public/imgs/logo/UniMatric-Logo.png">
+        </div>
+
+        <div id="footerInfor">
+           <p class="roboto">2025 UniMatric. All rights reserved</p>
+        </div>
+
+    </div>
+
+
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="./login.js"></script>
+
+
+</body>
+</html>
