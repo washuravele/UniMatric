@@ -19,6 +19,91 @@ $("#resetForm").click("click",()=>{
   $("#resetAccount").css("display","flex");
 });
 
+/*close form button*/
+$("form > #account-input-6 > #Close").click("click",()=>{
+  $(".img").css("display","block");
+  $("#aniPlay > h1").css("display","block");
+  $("#Account").css("display","none");
+  $("#resetAccount").css("display","none");
+});
+
+
+
+
+/*create acoount validation*/
+
+$("#create").click(function (event) {
+    event.preventDefault(); // ✅ Prevent form from refreshing
+
+    var firstName = $("#firstname").val().trim();
+    var lastName = $("#lastname").val().trim();
+    var IdNumber = $("#IdNumber").val().trim();
+    var email = $("#email").val().trim();
+    var password = $("#password").val();
+    var confirmPassword = $("#confirmPassword").val();
+    var privacyAgreement = $("#account-input-5 input:checked").length;
+
+    if (firstName === "") return alert("Please provide your first name");
+    if (lastName === "") return alert("Please provide your last name");
+    if (IdNumber === "") return alert("Please provide your ID number");
+    if (!/^\d{13}$/.test(IdNumber)) {
+        return alert(`ID number must be 13 digits. You entered ${IdNumber.length}`);
+    }
+    if (email === "") return alert("Please provide your email address");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return alert("Please enter a valid email address");
+    if (password === "") return alert("Please enter your password");
+    if (confirmPassword === "") return alert("Please confirm your password");
+    if (password !== confirmPassword) return alert("Passwords do not match");
+    if (!privacyAgreement) return alert("Please agree to the privacy policy");
+
+   
+    $("#Account").submit();
+});
+
+
+/*reset acoount validation*/
+$("#reset").click("click",()=>{
+     var IdNumber = $("#resetAccount > #account-input-1 > #IdNumber").val();
+     var email =  $("#resetAccount > #account-input-1 > #email").val();
+     var password = $("#newPassword").val();
+     var confirmPassword = $("#confirmNewPassword").val();
+
+    if(IdNumber !== ""){
+        if(/^\d{13}$/.test(IdNumber)){
+
+         if(email !== ""){
+             if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+                   if(password !== ""){
+                           if(confirmPassword !== ""){  
+                                if(password === confirmPassword){
+                                      $("#reset").attr("type","submit");    
+                              }else{
+                               alert("new password amd confirm password are not the same");
+                            }
+                          }else{
+                             alert("confirm your new password");
+                        }
+                     }else{
+                         alert("please enter the new password");
+                   }
+             }else{
+                  alert("Please enter a valid email address");
+             }
+
+         }else{
+            alert("please provide us your email address");
+         }
+
+        }else{
+          alert(`ID number should have  13 digits  only , and your id -->${IdNumber}  length--->${IdNumber.length}`);
+        }
+    }else{
+       alert("please provide us your ID Number");
+    }
+
+
+});
+
 
 
 
@@ -41,3 +126,7 @@ $("#menu").click("click",()=>{
     }
       
 });
+
+
+
+

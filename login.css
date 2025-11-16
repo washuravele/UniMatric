@@ -134,7 +134,7 @@ body{
   flex-wrap: wrap;
 }
 
-#account-input-2 > select{
+#account-input-2 > input{
   width: 95%;
   height: 30px;
   border-radius: 5px;
@@ -220,6 +220,11 @@ body{
    width: 250px;
    height: 24px;
 }
+#id-password > div> form > input[type="password"]{
+   width: 250px;
+   height: 24px;
+}
+
 #id-password > div> form > input[type="button"]{
     width: 100px;
     height: 30px;
