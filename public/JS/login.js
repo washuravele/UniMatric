@@ -5,11 +5,27 @@
 
 /*animation play ,forms  intractive */
 
+function resetForm(){
+  $("#firstname").val("");
+  $("#lastname").val("");
+  $("form > #account-input-1 > #IdNumber").val("");
+  $("form > #account-input-1 >  #email").val("");
+  $("#school").val("");
+  $("#password").val("");
+  $("#confirmPassword").val("");
+  $("#account-input-5 input:checked").length;
+  $("#newPassword").val("");
+  $("#confirmNewPassword").val("");
+
+}
+
+
 $("#accountForm").click("click",()=>{
   $(".img").css("display","none");
   $("#aniPlay > h1").css("display","none");
   $("#Account").css("display","flex");
    $("#resetAccount").css("display","none");
+   $("#feedback").css("display","none");
 });
 
 $("#resetForm").click("click",()=>{
@@ -17,6 +33,7 @@ $("#resetForm").click("click",()=>{
   $("#aniPlay > h1").css("display","none");
   $("#Account").css("display","none");
   $("#resetAccount").css("display","flex");
+  $("#feedback").css("display","none");
 });
 
 /*close form button*/
@@ -25,6 +42,18 @@ $("form > #account-input-6 > #Close").click("click",()=>{
   $("#aniPlay > h1").css("display","block");
   $("#Account").css("display","none");
   $("#resetAccount").css("display","none");
+  $("#feedback").css("display","none");
+   resetForm();
+});
+
+/*okay feedback - message button*/
+$("#feedback-B >input").click("click",()=>{
+   $(".img").css("display","block");
+  $("#aniPlay > h1").css("display","block");
+  $("#Account").css("display","none");
+  $("#resetAccount").css("display","none");
+  $("#feedback").css("display","none");
+   resetForm();
 });
 
 
@@ -33,8 +62,7 @@ $("form > #account-input-6 > #Close").click("click",()=>{
 /*create acoount validation*/
 
 $("#create").click(function (event) {
-    event.preventDefault(); // ✅ Prevent form from refreshing
-
+   
     var firstName = $("#firstname").val().trim();
     var lastName = $("#lastname").val().trim();
     var IdNumber = $("#IdNumber").val().trim();
@@ -56,8 +84,19 @@ $("#create").click(function (event) {
     if (password !== confirmPassword) return alert("Passwords do not match");
     if (!privacyAgreement) return alert("Please agree to the privacy policy");
 
-   
-    $("#Account").submit();
+   $("#create").attr("type","submit");    
+   const form = document.getElementById("Account");
+   form.addEventListener("submit", function (e) {
+        e.preventDefault();
+         $(".img").css("display","none");
+         $("#aniPlay > h1").css("display","none");
+         $("#Account").css("display","none");
+         $("#resetAccount").css("display","none");
+         $("#feedback").css("display","flex");
+         resetForm();
+    });
+
+
 });
 
 
@@ -76,7 +115,20 @@ $("#reset").click("click",()=>{
                    if(password !== ""){
                            if(confirmPassword !== ""){  
                                 if(password === confirmPassword){
+                                    
                                       $("#reset").attr("type","submit");    
+                                      const form = document.getElementById("resetAccount");
+                                       form.addEventListener("submit", function (e) {
+                                           e.preventDefault();
+                                             $(".img").css("display","none");
+                                             $("#aniPlay > h1").css("display","none");
+                                             $("#Account").css("display","none");
+                                             $("#resetAccount").css("display","none");
+                                             $("#feedback").css("display","flex");
+                                             resetForm();
+                                       });
+
+
                               }else{
                                alert("new password amd confirm password are not the same");
                             }

@@ -65,7 +65,7 @@ body{
 #img1 > div{
   width: 100%;
   height: 100%;
-  background-image: url("./public/imgs/pictures/matric-leaners-1.jpg");
+  background-image: url("../imgs/pictures/matric-leaners-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,7 +79,7 @@ body{
 #img2 > div{
   width: 100%;
   height: 100%;
-  background-image: url("./public/imgs/pictures/matric-leaners-2.jpg");
+  background-image: url("../imgs/pictures/matric-leaners-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -181,7 +181,10 @@ body{
 }
 
 
-/*resert form style*/
+
+
+
+/*reset form style*/
 
 #resetAccount{
    width: 95%;
@@ -192,6 +195,55 @@ body{
   border-radius: 25px;
   box-shadow: 2px 2px 2px 2px #000000;
   display: none;
+  flex-wrap: wrap;
+}
+
+
+
+/*feedback style*/
+#feedback{
+   width: 95%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px #000000;
+  color: #000000;
+  flex-wrap: wrap;
+  display: none;
+}
+
+#feedback-H{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#feedback-M{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#feedback-B{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+#feedback-B >input{
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+#feedback-B >input:hover{
+  background-color: #000000;
+  color: white;
 }
 
 

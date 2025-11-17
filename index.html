@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./public/css/login.css">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
             </div>
           
          <!--Create account form-->
-          <form name="createAccountForm" id="Account">
+          <form name="createAccountForm" id="Account" method="post" action="./index.html">
 
             <!-- create account header -->
             <div id="AccountHeader">
@@ -81,7 +81,7 @@
           </form>
 
          <!--reset form-->
-         <form  name="resetPassword" id="resetAccount">
+         <form  name="resetPassword" id="resetAccount" method="post">
 
             <!-- create account header -->
             <div id="AccountHeader">
@@ -105,11 +105,23 @@
                 <input type="button"  value="reset" id="reset">
                 <input type="button" value="Close" id="Close">
              </div>
+         </form>  
 
+         <!--feedback message-->
+        <div id="feedback">
 
-         </form>
+            <div id="feedback-H">
+                <h3 class="roboto" style="text-decoration: underline;">Feedback Message</h3>
+            </div>
 
+            <div id="feedback-M">
+                  <p class="montserrat" style="color: b;"></p>
+            </div>
 
+            <div id="feedback-B">
+                      <input class="montserrat" type="button" value="Okay" >
+            </div>
+        </div>
 
         </div>
 
@@ -165,7 +177,7 @@
 </div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
- <script src="./login.js"></script>
+ <script src="./public/JS/login.js"></script>
 
 
 </body>
