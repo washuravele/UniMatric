@@ -1,0 +1,418 @@
+ 
+ <%- include("partials/header.ejs") %>
+ <!--home-->
+ <!--content infor-->
+ <div class="contentInfor" id="home">
+    
+
+   <div id="homeHeader">
+     <h1 class="roboto"><%=greetings%>!<span style="text-decoration: dotted underline;"><%=firstName%></span>        <span style="text-decoration: dotted underline;"><%=lastName%></span> </h1>
+     <h1 class="roboto">Welcome to <span style="text-decoration: underline dotted;">UniMatric</span></h1>
+   </div>
+
+
+   <div id="subjects">
+      <!--subjects -->
+        <div id="matricSubjects">
+            <div class="subjectsInput" id="subject1">
+                     <div class="dot"></div>
+                     <label class="montserrat">Subject:</label>
+                         <select class="subjectSelect">
+                           <option value="">-- Select Subject --</option>
+                               <optgroup label="Compulsory">
+                                  <option>English Home Language</option>
+                                  <option>English First Additional Language</option>
+                                  <option>Afrikaans Huistaal</option>
+                                  <option>Afrikaans Eerste Additionele Taal</option>
+                                  <option>Sesotho Home Language</option>
+                                  <option>Siswati Home Language</option>
+                                  <option>Setswana Home Language</option>
+                                  <option>isiZulu Home Language</option>
+                                  <option>isiXhosa Home Language</option>
+                                  <option>isiNdebele Home Language</option>
+                                  <option>Sepedi Home Language</option>
+                                  <option>Xitsonga Home Language</option>
+                                  <option>Tshivenda Home Language</option>
+                                  <option>Mathematics</option>
+                                  <option>Mathematical Literacy</option>
+                                  <option>Life Orientation</option>
+                               </optgroup>
+                               <optgroup label="Electives">
+                                    <option>Economics</option>
+                                    <option>Physical Sciences</option>
+                                    <option>Life Sciences</option>
+                                    <option>Agricultural Sciences</option>
+                                    <option>Business Studies</option>
+                                    <option>Accounting</option>
+                                    <option>History</option>
+                                    <option>Geography</option>
+                                    <option>Religion Studies</option>
+                              </optgroup>
+                         </select>
+                       <label class="montserrat">Percentage:</label>
+                       <input type="number" min="0" max="100" style="text-align: center;" class="montserrat subjectInput"> 
+             </div>
+         
+
+
+            <!--adding button-->
+             <div id="addBtn">
+                   <div id="addImg">
+                    <img src="/imgs/icons/addition.png">
+                   </div>
+                    <div class="roboto">
+                        <label id="countSubj">1</label>/7
+                    </div>
+             </div>
+ 
+          <!--average score-->
+           <div id="avgScore">
+             <div class="dot"></div>
+             <label class="montserrat">Average Score:</label>
+             <label class="roboto" id="avd">0.00%</label>
+           </div>
+
+          <!--APS Score-->
+          <div id="apsScore">
+              <div class="dot"></div>
+               <label class="montserrat">APS Score:</label>
+              <label class="roboto" id="aps">0</label>
+          </div>
+
+          <!--check uniCourses-->
+          <div id="checkCourses">
+               <input  formaction="" type="button" value="Check Courses">
+          </div>
+        </div>
+
+       <!--courses-->
+        <div id="uniCoursers">
+
+            <div id="results" style="margin-top:20px;  ">
+                    <h3 class="montserrat" style="text-align: center; text-decoration: 2px underline dotted;">You qualify for the following courses:</h3>
+                    <div id="courseList">
+                    
+
+                    </div>
+         </div>
+
+
+       </div>
+
+   </div>
+
+ </div>
+ 
+ <!--uni-->
+ <div class="contentInfor" id="uni" style="display: none;">
+
+
+  <div id="uniC">
+     <!--list of universities-->
+   <div id="university-list">
+
+         <div id="numberOfUni">
+                    <p class="roboto" style="text-decoration: underline dotted;">26 Universities</p>
+         </div>
+
+       <!--vut-->
+         <div class="uniInforCard" id="cput">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Cape Peninsula University of Technology</p>
+               </div>
+          </div>
+
+
+            <!--vut-->
+         <div class="uniInforCard" id="uct">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of Cape Town</p>
+               </div>
+          </div>
+
+
+            <!--vut-->
+         <div class="uniInforCard" id="cut">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Central University of Technology</p>
+               </div>
+          </div>
+
+
+            <!--vut-->
+         <div class="uniInforCard" id="dut">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Durban University of Technology</p>
+               </div>
+          </div>
+
+
+            <!--vut-->
+         <div class="uniInforCard" id="ufh">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of Fort Hare</p>
+               </div>
+          </div>
+
+
+        <!--vut-->
+         <div class="uniInforCard" id="ufs">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of the Free State</p>
+               </div>
+          </div>
+
+          <!--vut-->
+         <div class="uniInforCard" id="uj">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of Johannesburg</p>
+               </div>
+          </div>
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="ukzn">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of KwaZulu Natal</p>
+               </div>
+          </div>
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="ul">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of Limpopo</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="mut">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Mangosuthu University of Technology</p>
+               </div>
+          </div>
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="um">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Mpumalanga University</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="nmu">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Nelson Mandela Metropolitan University</p>
+               </div>
+          </div>
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="nwu">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >North-West University</p>
+               </div>
+          </div>
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="ru">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Rhodes University</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="smu">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Sefako Makgatho Health & Sciences University</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="spu">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Sol Plaatje University</p>
+               </div>
+          </div>
+
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="unisa">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of South Africa</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="su">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Stellenbosch University</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="tut">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Tshwane University of Technology</p>
+               </div>
+          </div>
+
+
+
+          <!--vut-->
+         <div class="uniInforCard" id="vut">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Vaal University of Technology</p>
+               </div>
+          </div>
+
+           <!--vut-->
+         <div class="uniInforCard" id="univen">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of Venda</p>
+               </div>
+          </div>
+
+
+           <!--vut-->
+         <div class="uniInforCard" id="wsu">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >Walter Sisulu University</p>
+               </div>
+          </div>
+
+
+           <!--vut-->
+         <div class="uniInforCard" id="uwc">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of the Western Cape</p>
+               </div>
+          </div>
+
+
+           <!--vut-->
+         <div class="uniInforCard" id="wits">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of the Witwatersrand</p>
+               </div>
+          </div>
+
+           <!--vut-->
+         <div class="uniInforCard" id="uz">
+            <!--vasity name-->
+               <div>
+                   <p class="roboto" >University of Zululand</p>
+               </div>
+          </div>
+         
+
+
+   </div>
+
+  <!--more about the vasity and intro pictures -->
+   <div id="uniIntro">
+           <!--intro images-->
+           <div id="introImg">
+               <!--intro Img1-->
+                 <div class="introImg" id="introImg1">
+                          <div></div>
+                 </div>
+
+                 <h2 class="roboto" style="text-align: center;">Universities</h2>
+
+                 <div class="introImg" id="introImg2">
+                          <div></div>
+                 </div>
+
+           </div>
+   </div>
+
+</div>
+ 
+ </div>
+
+ <!--about us page-->
+  <div class="contentInfor" id="about-us-page" style="display: none;">
+
+
+ </div>
+
+
+ 
+
+
+
+  <!--nav bar-->
+ <div id="navBar">
+       
+    
+    <div id="profile">
+         <div class="c" style="text-align: center; background-color: black; cursor:default;border: none;">
+      
+          <h1 class="roboto" style="font-size: 15px; color: white;"><%=fIntial%>.<%=lIntial%></h1>
+         </div>
+    </div>
+
+
+    <div id="nav">
+            <div class="c" style="border: dotted 2px;" id="homePage">
+              <a ><img src="/imgs/icons/home-logo-page.PNG" alt="Home"></a>
+            </div>
+            <div class="c"  id="UniPage">
+             <a><img src="/imgs/icons/university-logo-page.PNG"></a>  
+            </div>
+            <div class="c"    id="aboutUS">
+              <a ><img src="/imgs/icons/about-us-logo-page.PNG"></a>
+            </div>
+    </div>
+
+   
+    <div id="out">
+         <div class="c" id="signOut">
+           <a><img src="/imgs/icons/sign-out-logo-page.PNG"></a> 
+         </div>
+    </div>
+
+ </div>
+
+<%- include("partials/footer.ejs") %>

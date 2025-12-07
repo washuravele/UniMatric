@@ -1,0 +1,783 @@
+
+#log-in{
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#crediatials{
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px white;
+    color: white;
+}
+
+#crediatials{
+  color: black;
+  display: grid;
+  grid-template-columns: 90% 5%;
+  grid-template-rows: 100%;
+}
+
+.contentInfor{
+    border: 1px solid red;
+}
+
+
+
+/*navBar style*/
+#navBar{
+    /*border: 1px solid yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#profile{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.c{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.c >a > img{
+    width: 100%;
+    height: 100%;
+}
+.c:hover{
+    border: 2px dotted ;
+}
+
+#nav{
+   /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*home page style*/
+#homeHeader{
+  /*  border: 1px solid ;*/
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+/*subjectsstyle*/
+#subjects{
+ /* border: 1px solid rgb(203, 203, 209);*/
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#matricSubjects{
+   /* border: 1px solid red;*/
+   /* width: 45%;*/
+   padding: 5px;
+   overflow-y: auto;
+   height: 100%;
+
+}
+#uniCoursers{
+   /*border: 1px solid yellow;*/
+   width: 45%;
+   border-left: 3px dotted ;
+}
+.subjectsInput{
+   /* border: 1px solid ;*/
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+.dot{
+    border-radius: 50%;
+    border: 3px dotted;
+    width: 10px;
+    height: 10px;
+    
+}
+
+.subjectsInput >select{
+ width: 240px;
+ height: 25px;
+ border-radius: 10px;
+}
+.subjectsInput >input{
+    width: 50px;
+    height: 22px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+/*adding style*/
+#addBtn{
+  /*  border: 1px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#addImg{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+#addImg > img{
+    width: 100%;
+    height: 100%;
+}
+#addImg:hover{
+   width: 30px;
+   height: 30px;
+}
+
+/*average score style*/
+#avgScore{
+     margin-top: 10px;
+    display: flex;
+     gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*aps score style*/
+#apsScore{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*check courses style*/
+#checkCourses{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#checkCourses >input{
+  width: 110px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
+#checkCourses >input:hover{
+  background-color: #000000;
+  color: white;
+}
+
+
+
+/*courses style*/
+#uniCoursers{
+
+    padding: 5px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#results{
+  
+}
+#courseList{
+     display: flex;
+     justify-content: space-between;
+      padding: 5px;
+     flex-wrap: wrap;
+}
+
+.cardC{
+  width: 80%;
+ /* height: 200px;*/
+  padding: 5px;
+}
+.cardImg{
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    margin-top: 7px;
+    margin-top: 7px;
+    
+}
+
+.cardImg > img{
+    border: 2px dotted ;
+    width: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.cardImg > img:hover{
+border: 2px solid;
+}
+.courseInfor{
+     width: 87%;
+     padding: 5px;
+     border-radius: 20px;
+     background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+/*university home style */
+
+#uni{
+  border: 1px solid;
+
+}
+
+#uniC{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/*university list style*/
+#university-list{
+  border: 1px solid blue;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 490px;
+  overflow-y: auto;
+}
+
+#numberOfUni{
+  border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 2px;
+}
+
+.uniInforCard{
+ /* border: 1px solid red;*/
+  width: 90%;
+  margin-left: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
+  background-color: white;
+}
+.uniInforCard:hover{
+  opacity: 0.5;
+  border: dotted 2px;
+}
+.uniInforCard > div > p{
+  font-size: 13px;
+}
+
+
+#uniIntro{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px dotted black;
+}
+
+
+/*universities*/
+#cput{
+  background-image: url("/imgs/logo/cput-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#uct{
+  background-image: url("/imgs/logo/UCT-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#cut{
+  background-image: url("/imgs/logo/cut-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#dut{
+  background-image: url("/imgs/logo/DUT-LOGO.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ufh{
+  background-image: url("/imgs/logo/UFH-logo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ufs{
+  background-image: url("/imgs/logo/ufs-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#uj{
+  background-image: url("/imgs/logo/uj-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ukzn{
+  background-image: url("/imgs/logo/ukzn-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ul{
+  background-image: url("/imgs/logo/UL-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#mut{
+  background-image: url("/imgs/logo/mut-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#um{
+  background-image: url("/imgs/logo/um-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#nmu{
+  background-image: url("/imgs/logo/nmu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#nwu{
+  background-image: url("/imgs/logo/nwu-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ru{
+  background-image: url("/imgs/logo/ru-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#smu{
+  background-image: url("/imgs/logo/smu-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+#spu{
+  background-image: url("/imgs/logo/spu-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#unisa{
+  background-image: url("/imgs/logo/unisa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#su{
+  background-image: url("/imgs/logo/SU.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#tut{
+  background-image: url("/imgs/logo/tut-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#vut{
+  background-image: url("/imgs/logo/VUT-LOGO.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#univen{
+  background-image: url("/imgs/logo/univen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#wsu{
+  background-image: url("/imgs/logo/wsu-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+#uwc{
+  background-image: url("/imgs/logo/uwc-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#wits{
+  background-image: url("/imgs/logo/wits-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#uz{
+  background-image: url("/imgs/logo/uz-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+
+
+/*intro images style*/
+#introImg{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.introImg{
+   width: 390px;
+   height: 170px;
+   padding: 5px;
+}
+
+#introImg1{
+  border-bottom: 2px dotted black;
+  
+}
+#introImg1 > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("/imgs/pictures/matric-leaners-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+#introImg2{
+  border-top: 2px dotted black;
+}
+
+#introImg2 > div{
+  width: 100%;
+  height: 100%;
+  background-image: url("/imgs/pictures/matric-leaners-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer style*/
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+
+#footerImg{
+   /* border: 1px solid black;*/
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px ;
+}
+
+#footerImg > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* background gradient */
+
+.gradient-background {
+  background: linear-gradient(300deg, #2c2c2c, #f1eaea, #252325);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+/*respons*/
+
+@media (max-width:1303px){
+
+    #log-in{
+     /*height: auto;*/
+   }
+
+   #crediatials{
+    width: 80%;
+    height: auto;
+
+   }
+
+   #homeHeader{
+    height: auto;
+   }
+
+   #subjects{
+    width: 100%;
+    display: block;
+    height: auto;
+   }
+
+   #matricSubjects{
+    width: auto;
+    height: auto;
+    width: 100%;
+   }
+
+   #uniCoursers{
+    width: 100%;
+    height: auto;
+   }
+
+
+}
+
+@media (max-width:1046px){
+
+    #crediatials{
+     color: black;
+     display: grid;
+      grid-template-columns: 100%;
+     grid-template-rows: 5% 90% ;
+  }
+   
+  #navBar{
+      flex-direction: row;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      gap: 10px;
+  }
+
+
+
+  #nav{
+      flex-direction: row;
+  }
+
+  #profile{
+    display: none;
+  }
+  .c{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  
+  .cardImg{
+    display: none;
+  }
+
+  #uniCoursers{
+    margin-bottom: 30px;
+  }
+
+
+  #footer{
+    display: none;
+  }
+}
+
+@media (max-width:536px){
+
+    #homeHeader{
+       font-size: 10px;
+  }
+
+  #uniCoursers{
+    border: none;
+  }
+
+.subjectsInput{
+    flex-wrap: wrap;
+}
+
+}
+
+
+@media (max-width:424px){
+   #log-in{
+     height: auto;
+   }
+}
+
+
+/*fonts style*/
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight:10px;
+  font-style: normal;
+}

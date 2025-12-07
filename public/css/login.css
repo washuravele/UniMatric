@@ -277,13 +277,13 @@ body{
    height: 24px;
 }
 
-#id-password > div> form > input[type="button"]{
+#id-password > div> form > input[type="submit"]{
     width: 100px;
     height: 30px;
     cursor: pointer;
 }
 
-#id-password > div> form > input[type="button"]:hover{
+#id-password > div> form > input[type="submit"]:hover{
   color: white;
   background-color: #000000;
 }
@@ -305,8 +305,8 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
-    /*margin-left: -200px;*/
-    /*border: 1px solid red;*/
+    margin-left: -200px;
+    height: 40px;
 }
 
 #infor{
@@ -315,7 +315,8 @@ body{
     text-align: center;
     background-color: black;
     height: 300px;
-    display: none;
+    visibility: hidden;
+   /* display: none;*/
    
 }
 
@@ -343,7 +344,7 @@ body{
 
 
 #footerImg{
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     width: 50px;
     display: flex;
     align-items: center;
@@ -376,6 +377,8 @@ body{
   background-size: 180% 180%;
   animation: gradient-animation2 18s ease infinite;
 }
+
+
 
 @keyframes gradient-animation {
   0% {
@@ -418,4 +421,67 @@ body{
   font-optical-sizing: auto;
   font-weight:10px;
   font-style: normal;
+}
+
+
+
+
+/*responsinse */
+@media (max-width :1047px){
+
+  #log-in{
+    height: 100vh;
+ 
+  }
+  #crediatials{
+   width: 90%;
+   height: 90vh;
+   box-shadow: none;
+   gap: 10px;
+  
+  }
+  #crediatials > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#aniPlay{
+  border: none;
+}
+  #menu{
+    display: none;
+  }
+  #moreInfor{
+   display: none;
+  }
+  #id-password{
+      margin-left: 20px;
+   }
+
+  #footer{
+    display: none;
+  }
+}
+
+
+@media (max-width:787px){
+   .img {
+     width: 80% ;
+     height: 100px;
+   }
+
+   #crediatials{
+    margin-top: 100px;
+    height: auto;
+   }
+}
+
+@media (max-width:422px){
+  .btn1{
+  width: 95%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
 }

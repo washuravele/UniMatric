@@ -1,0 +1,413 @@
+let count = 1;
+const maxSubjects = 7;
+
+// Compulsory subjects
+const compulsorySubjects = [
+  "English Home Language",
+  "English First Additional Language",
+  "Afrikaans Huistaal",
+  "Afrikaans Eerste Additionele Taal",
+  "Sesotho Home Language",
+  "Siswati Home Language",
+  "Setswana Home Language",
+  "isiZulu Home Language",
+  "isiXhosa Home Language",
+  "isiNdebele Home Language",
+  "Sepedi Home Language",
+  "Xitsonga Home Language",
+  "Tshivenda Home Language",
+  "Mathematics",
+  "Mathematical Literacy",
+  "Life Orientation"
+];
+
+// Elective subjects
+const electiveSubjects = [
+  "Economics",
+  "Physical Sciences",
+  "Life Sciences",
+  "Agricultural Sciences",
+  "Business Studies",
+  "Accounting",
+  "History",
+  "Geography",
+  "Religion Studies"
+];
+
+// Helper to build <option> list
+function buildOptions(subjects) {
+  return subjects.map(subj => `<option value="${subj}">${subj}</option>`).join("");
+}
+
+function addSubject() {
+  if (count >= maxSubjects) {
+    alert("You can only add up to 7 subjects");
+    return;
+  }
+
+  count++;
+  $("#matricSubjects").prepend(`
+    <div class="subjectsInput" id="subject${count}">
+      <div class="dot"></div>
+      <label class="montserrat">Subject:</label>
+      <select class="subjectSelect">
+        <option value="">-- Select Subject --</option>
+        <optgroup label="Compulsory">
+          ${buildOptions(compulsorySubjects)}
+        </optgroup>
+        <optgroup label="Electives">
+          ${buildOptions(electiveSubjects)}
+        </optgroup>
+      </select>
+      <label class="montserrat">Percentage:</label>
+      <input type="number" min="0" max="100" style="text-align: center;" class="montserrat subjectInput"> 
+    </div>
+  `);
+
+  $("#countSubj").text(count);
+}
+
+$("#addBtn").on("click", addSubject);
+
+
+// Convert percentage → APS points
+function getAPSPoints(percentage) {
+  if (percentage >= 80) return 7;
+  if (percentage >= 70) return 6;
+  if (percentage >= 60) return 5;
+  if (percentage >= 50) return 4;
+  if (percentage >= 40) return 3;
+  if (percentage >= 30) return 2;
+  if (percentage >= 0)  return 1;
+  return 0;
+}
+
+function calculateScores() {
+  let total = 0;
+  let apsTotal = 0;
+  let subjects = $(".subjectInput");
+
+  subjects.each(function () {
+    let val = parseInt($(this).val());
+    if (!isNaN(val)) {
+      total += val;
+      apsTotal += getAPSPoints(val);
+    }
+  });
+ 
+   
+
+ dotChange();
+
+   //console.log($(".subjectSelect").length);
+
+  // Average relative to 7 subjects (max 700 total)
+  let avgScore = (total / 700) * 100;
+
+  $("#avd").text(`${avgScore.toFixed(2)}%`);
+  $("#aps").text(`${apsTotal}`);
+}
+
+// Attach one event listener for all inputs
+$(document).on("input", ".subjectInput", calculateScores);
+
+
+
+function dotChange(){
+   if($("#subject1 > .subjectInput").val() !== "" && $("#subject1 > select").val() !== ""){
+      $("#subject1 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject1 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+
+   if($("#subject2 > .subjectInput").val() !== "" && $("#subject2 > select").val() !== ""){
+      $("#subject2 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject2 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+
+
+   if($("#subject3 > .subjectInput").val() !== ""  && $("#subject3 > select").val() !== ""){
+      $("#subject3 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject3 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+
+
+     if($("#subject4 > .subjectInput").val() !== "" && $("#subject4 > select").val() !== ""){
+      $("#subject4 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject4 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+
+     if($("#subject5 > .subjectInput").val() !== "" && $("#subject5 > select").val() !== ""){
+      $("#subject5 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject5 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+
+     if($("#subject6 > .subjectInput").val() !== "" && $("#subject6 > select").val() !== ""){
+      $("#subject6 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject6 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+     if($("#subject7 > .subjectInput").val() !== "" && $("#subject7 > select").val() !== "" ){
+      $("#subject7 > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#subject7 > .dot").css({
+      "background-color":"#f1eaea"
+     });
+   }
+
+   if($(".subjectSelect").length === 7){
+      $("#avgScore > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#avgScore > .dot").css({
+       "background-color": "#f1eaea",
+      })
+   }
+ 
+   if($(".subjectSelect").length === 7){
+      $("#apsScore > .dot").css({
+       "background-color": "#000000",
+      })
+   }else{
+     $("#apsScore > .dot").css({
+       "background-color": "#f1eaea",
+      })
+   }
+}
+
+//home page
+
+$("#homePage").click("click",()=>{
+    $("#home").css({
+       display:"block",
+   });
+   $("#uni").css({
+    display:"none",
+   });
+
+    $("#about-us-page").css({
+    display:"none",
+   });
+
+
+
+     $("#UniPage").css({
+      border: "none",
+   });
+   
+     $("#homePage").css({
+       border:"dotted 2px ",
+     });
+
+      $("#aboutUS").css({
+       border:"none",
+     });
+
+});
+
+
+//univasity page
+$("#UniPage").click("click",()=>{
+   $("#home").css({
+       display:"none",
+   });
+   $("#uni").css({
+    display:"block",
+   });
+    $("#about-us-page").css({
+    display:"none",
+   });
+
+    $("#UniPage").css({
+      border: "dotted 2px",
+   });
+   
+     $("#homePage").css({
+       border:"none",
+     });
+
+      $("#aboutUS").css({
+       border:"none",
+     });
+
+});
+
+//about page
+
+$("#aboutUS").click("click",()=>{
+
+   $("#home").css({
+       display:"none",
+   });
+   $("#uni").css({
+    display:"none",
+   });
+
+     $("#about-us-page").css({
+    display:"block",
+   });
+
+
+
+    $("#UniPage").css({
+      border: "none",
+   });
+   
+     $("#homePage").css({
+       border:"none",
+     });
+
+      $("#aboutUS").css({
+       border:"dotted 2px",
+     });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getSelectedSubjects() {
+    const subjects = [];
+    const seen = new Set();
+    const subjectInputs = document.querySelectorAll(".subjectsInput");
+
+    subjectInputs.forEach(div => {
+      const subject = div.querySelector(".subjectSelect").value.trim();
+      const percentageValue = div.querySelector(".subjectInput").value;
+      const percentage = Number(percentageValue);
+
+      if (!subject) return; // skip empty rows
+
+      // basic client validation
+      if (seen.has(subject)) {
+        throw new Error(`Duplicate subject selected: ${subject}`);
+      }
+      if (Number.isNaN(percentage) || percentage < 0 || percentage > 100) {
+        throw new Error(`Invalid percentage for ${subject}. Enter 0–100.`);
+      }
+
+      seen.add(subject);
+      subjects.push({ subject, percentage });
+    });
+
+    return subjects;
+  }
+
+  document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
+  try {
+      const subjects = getSelectedSubjects();
+      const aps = Number(document.getElementById("aps").textContent);
+
+      if (!subjects.length) {
+        alert("Please select at least one subject and enter percentages.");
+        return;
+      }
+
+        const res = await fetch("/check-courses", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subjects, aps })
+      });
+
+
+        const data = await res.json();
+
+        const resultsDiv = document.getElementById("results");
+        const courseList = document.getElementById("courseList");
+
+        courseList.innerHTML = ""; // clear old results
+        resultsDiv.style.display = "block";
+
+
+
+        if (!data.qualified || data.courses.length === 0) {
+            courseList.innerHTML = `
+                <p style="color:red; text-align: center; text-decoration: 2px dotted underline;">You do not qualify for any courses.</p>
+            `;
+            return;
+        }
+
+        data.courses.forEach(c => {
+            courseList.innerHTML += `
+                <!--courses card-->
+                             <div class="cardC">
+                                 <!--courses img-->
+                                 <div class="cardImg">
+                                        <img src="/imgs/logo/VUT-LOGO.png">
+                                 </div>
+                                 <!--course infor-->
+                                 <div class="courseInfor" style="font-size: 12px;">
+                                       <p class="montserrat" style="text-align: center; text-decoration: underline;"> <strong>${c.university}</strong></p>
+                                       <p class="montserrat" style="text-align:center;"><strong> ${c.course}</strong></p>
+                                       <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
+                                       <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
+                                       <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
+                                       <p class="montserrat"><strong>computedAPS:</strong> ${c.computedAPS}</p>
+                                 </div>
+                             </div>
+            `;
+        });
+   
+              if (!data.validRequest) {
+        alert(`Validation error: ${data.message}`);
+        return;
+      }
+
+    } catch (err) {
+      alert(err.message || "Something went wrong. Please check your inputs.");
+    }
+
+
+});
