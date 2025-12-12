@@ -411,3 +411,97 @@ function getSelectedSubjects() {
 
 
 });
+
+
+
+$(".uniInforCard").on("click", async function () {
+  const uniIDName = $(this).attr("id"); // get the ID of the clicked card
+  const uniID = [uniIDName]; // store it directly as a string in the array
+
+  try {
+    const res = await fetch("/vasity-infor", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ uniID, uniIDName })
+   });
+
+
+      const vasityInfor = document.getElementById("aboutVasity");
+
+      const data = await res.json();
+
+      vasityInfor.innerHTML = `
+  <!--vasity name-->
+  <div id="vasityName">
+    <p class="roboto">${data.name}</p>
+  </div>
+
+  <!--address, campus and ranking-->
+  <div id="vasityInfor1">
+
+    <div id="vasityAddress">
+      <h4 class="roboto">Physical Address</h4>
+      <div style="margin-left: 20px;" class="montserrat">
+        ${data.address.map(addr => `
+          <li class="montserrat">${addr.campus}: ${addr.physicalAddress}</li>
+        `).join("")}
+      </div>
+    </div>
+
+    <!--campus and vasity ranking-->
+    <div id="vasity-campus-ranking">
+      <h4 class="roboto">Campus</h4>
+      <div style="margin-left: 20px;" class="montserrat">
+        ${data.address.map(addr => `<li>${addr.campus}</li>`).join("")}
+      </div>
+
+      <h4 class="roboto">Ranking</h4>
+      <div style="margin-left: 20px;" class="montserrat">
+        <li>National ranking: ${data.localRanking.southAfrica}</li>
+        <li>Continental ranking: ${data.localRanking.africa}</li>
+      </div>
+    </div>
+  </div>
+
+  <!--vasity courses-->
+  <div id="vasityInfor2">
+    <!--application dates-->
+    <div id="vasity-application-dates">
+      <h4 class="roboto">Application Dates</h4>
+      <div style="margin-left: 20px;" class="montserrat">
+        ${data.applicationDates.map(date => `
+          <li>Opening Date: ${date.openingDate || date.openingLateDate}</li>
+          <li>Closing Date: ${date.closingDate}</li>
+        `).join("")}
+        <li>Application Website: ${data.applicationWebsite}</li>
+      </div>
+    </div>
+
+    <!--official vasity websites-->
+    <div id="vasityWebsites">
+      <h4 class="roboto">Varsity Official Website</h4>
+      <div style="margin-left: 20px;" class="montserrat">
+        <li>Self Check: ${data.varsityOfficialSite.selfCheck}</li>
+        <li>ITS: ${data.varsityOfficialSite.ITS}</li>
+        <li>Site: ${data.varsityOfficialSite.site}</li>
+      </div>
+    </div>
+  </div>
+
+  <!--vasity pros-->
+  <div id="vasityInfor3">
+    <a href="/imgs/logo/nwu-logo.png" download="washu.png">
+      <button class="montserrat" id="prospectors">Download Prospectors</button>
+    </a>
+    <button class="montserrat" id="vasityClose">Close</button>
+  </div>
+`;
+
+ 
+
+
+  } catch (err) {
+    console.error("Fetch error:", err);
+  }
+
+});

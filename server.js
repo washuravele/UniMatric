@@ -1,7 +1,7 @@
 import e from "express";
 import bodyParser from "body-parser";
 import PG from "pg";
-
+import axios from "axios";
 
 const port= 3000;
 const app= e();
@@ -22,86 +22,174 @@ app.use(e.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(e.json());
 
-const universities = [
-  {
-    id: "01",
-    name: "Vaal University of Technology",
-    faculty: "Faculty of Applied & Computer Sciences",
-    department: "DEPARTMENT OF NATURAL SCIENCES",
-    courses: [
-      {
-        name: "Dip: Analytical Chemistry",
-        duration: "3 years",
-        requirements: {
-          compulsory: [
-            { subject: "English", minLevel: 4 },
-            { subject: "Mathematics or Technical Mathematics or Engineering Mathematics (TVET N4)", minLevel: 4 },
-            { subject: "Physical Science or Engineering Sciences (TVET N4)", minLevel: 4 },
-            { subject: "Any other 3 subjects", minTotalLevel: 9 }
-          ],
-          totalAPS: [{ minScore: 21, note: "exclude LO" }]
-        }
-      },
-      {
-        name: "Dip: Biotechnology",
-        duration: "3 years",
-        requirements: {
-          compulsory: [
-            { subject: "English", minLevel: 4 },
-            { subject: "Mathematics or Technical Mathematics or Engineering Mathematics (TVET N4)", minLevel: 4 },
-            { subject: "Physical Science or Engineering Science (TVET N4)", minLevel: 4 },
-            { subject: "Life Sciences", minLevel: 4 }
-          ],
-          totalAPS: [{ minScore: 23, note: "exclude LO" }]
-        }
-      },
-      {
-        name: "Dip: Agricultural Management",
-        duration: "3 years",
-        requirements: {
-          compulsory: [
-            { subject: "English", minLevel: 4 },
-            { subject: "Mathematics or Technical Mathematics", minLevel: 3 },
-            { subject: "Mathematics Literacy", minLevel: 4 },
-            { subject: "Agriculture / Life Science", minLevel: 3 }
-          ],
-          totalAPS: [
-            { minScore: 21, note: "Mathematics or Tech Maths, exclude LO" },
-            { minScore: 22, note: "Mathematics Literacy, exclude LO" }
-          ]
-        }
-      },
-      {
-        name: "Dip: Environmental Science",
-        duration: "3 years",
-        requirements: {
-          compulsory: [
-            { subject: "English", minLevel: 4 },
-            { subject: "Mathematics", minLevel: 4 },
-            { subject: "Physical Science", minLevel: 4 }
-          ],
-          totalAPS: [{ minScore: 21, note: "exclude LO" }]
-        }
-      },
-      {
-        name: "Bachelor of Health Sciences: Medical Laboratory Science",
-        duration: "4 years",
-        requirements: {
-          compulsory: [
-            { subject: "English", minLevel: 4 },
-            { subject: "Mathematics", minLevel: 4 },
-            { subject: "Physical Science", minLevel: 4 },
-            { subject: "Life Science", minLevel: 5 }
-          ],
-          totalAPS: [{ minScore: 27, note: "exclude LO" }]
-        }
+/*const universities = [ {
+  id: "01",
+  name: "Vaal University of Technology",
+  Faculty: "Faculty of Applied & Computer Sciences",
+  Department: "DEPARTMENT OF NATURAL SCIENCES",
+  courses: [
+    {
+      name: "Dip: Analytical Chemistry",
+      duration: "3 years",
+      requirements: {
+        compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
+          { subject: "Physical Science", minLevel: 4 },
+          { subject: "Any other 3 subjects", minTotalLevel: 9 }
+        ],
+        totalAPS: { minScore: 21, note: "exclude LO" }
       }
-    ]
+    },
+    {
+      name: "Dip: Biotechnology",
+      duration: "3 years",
+      requirements: {
+        compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
+          { subject: "Physical Science", minLevel: 4 },
+          { subject: "Life Sciences", minLevel: 4 }
+        ],
+        totalAPS: { minScore: 23, note: "exclude LO" }
+      }
+    },
+    {
+      name: "Dip: Agricultural Management",
+      duration: "3 years",
+      requirements: {
+        compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics or Technical Mathematics", minLevel: 3 },
+          { subject: "Mathematics Literacy", minLevel: 4 },
+          { subject: "Agriculture / Life Science", minLevel: 3 }
+        ],
+        apsOptions: [
+          { minScore: 21, note: "Maths/Tech Maths, exclude LO" },
+          { minScore: 22, note: "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      name: "Dip: Environmental Science",
+      duration: "3 years",
+      requirements: {
+        compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics", minLevel: 4 },
+          { subject: "Physical Science", minLevel: 4 }
+        ],
+        totalAPS: { minScore: 21, note: "exclude LO" }
+      }
+    },
+    {
+      name: "Bachelor of Health Sciences: Medical Laboratory Science",
+      duration: "4 years",
+      requirements: {
+        compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics", minLevel: 4 },
+          { subject: "Physical Science", minLevel: 4 },
+          { subject: "Life Science", minLevel: 5 }
+        ],
+        totalAPS: { minScore: 27, note: "exclude LO" }
+      }
+    }
+  ]
+},
+
+{
+  id: "01",
+  name: "Vaal University of Technology",
+  Faculty: "Faculty of Applied & Computer Sciences",
+  Department: "DEPARTMENT OF COMPUTER SCIENCES",
+  courses: [
+    {
+      name: "Dip: Information Technology",
+      duration: "3 years",
+      requirements: {
+        compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
+          { subject: "Mathematical Literacy", minLevel: 6 },
+          { subject: "Other 4 Subjects (excluding LO)", minTotalLevel: 6 }
+        ],
+        apsOptions: [
+          { minScore: 26, note: "Maths/Tech Maths, exclude LO" },
+          { minScore: 28, note: "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      name: "Dip: Extended Information Technology Programme",
+      duration: "4 years",
+      requirements: {
+       compulsory: [
+          { subject: "English", minLevel: 4 },
+          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
+          { subject: "Mathematical Literacy", minLevel: 6 },
+          { subject: "Other 4 Subjects (excluding LO)", minTotalLevel: 6 }
+        ],
+        apsOptions: [
+          { minScore: 24, note: "Maths/Tech Maths, exclude LO" },
+          { minScore: 26, note: "Maths Literacy, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+];*/
+const vasityInfor = [
+  {
+    name: "University of Johannesburg",
+    acronym: "uj",
+    address: [
+      { campus: "Soweto", physicalAddress: "Block 15, 004 Soweto" },
+      { campus: "Johannesburg", physicalAddress: "TL Street 15" },
+      { campus: "Tshiawelo", physicalAddress: "Fydudzi Street 001" }
+    ],
+    applicationDates: [
+      { openingDate: "22 January 2025", closingDate: "25 March 2025" },
+      { openingLateDate: "14 January 2026", closingDate: "25 March 2025" }
+    ],
+    applicationWebsite: "https://www.ujApplication.com",
+    varsityOfficialSite: {
+      selfCheck: "https://www.selfcheck.com",
+      ITS: "https://www.ITS.com",
+      site: "https://www.uj.com"
+    },
+    localRanking: {
+      southAfrica: "6th (2025)",   // national ranking
+      africa: "8th (2025)"         // continental ranking
+    }
+  },
+
+  {
+    name: "University of Cape Town",
+    acronym: "uct",
+    address: [
+      { campus: "Upper Campus", physicalAddress: "Rondebosch, Cape Town, 7700" },
+      { campus: "Medical Campus", physicalAddress: "Observatory, Cape Town, 7925" },
+      { campus: "Hiddingh Campus", physicalAddress: "Orange Street, Cape Town, 8001" }
+    ],
+    applicationDates: [
+      { openingDate: "1 April 2025", closingDate: "31 July 2025" },
+      { openingLateDate: "1 August 2025", closingDate: "30 September 2025" }
+    ],
+    applicationWebsite: "https://applyonline.uct.ac.za",
+    varsityOfficialSite: {
+      selfCheck: "https://www.uctselfcheck.ac.za",
+      ITS: "https://www.uctITS.ac.za",
+      site: "https://www.uct.ac.za"
+    },
+    localRanking: {
+      southAfrica: "1st (2025)",   // national ranking
+      africa: "1st (2025)"         // continental ranking
+    }
   }
-  // Add more universities here
+
+
 ];
-
-
 
 
 
@@ -193,6 +281,10 @@ function canonicalize(subjectName) {
   if (s.includes("life science")) return "Life Sciences";
   if (s.includes("agricultural")) return "Agriculture";
   if (s.includes("life orientation")) return "Life Orientation";
+  if (s.includes("life science")) return "Life Sciences";
+  if (s.includes("biology")) return "Life Sciences";
+   if (s.includes("accounting")) return "Accounting";
+   if (s.includes("technical science")) return "Physical Science";
   return subjectName.trim();
 }
 
@@ -240,11 +332,14 @@ function validatePayload(subjects, aps) {
 
 
 function meetsRequirements(course, enrichedSubjects, aps) {
-  const { compulsory, totalAPS } = course.requirements;
+  const { compulsory, totalAPS, apsOptions } = course.requirements;
 
+  // Check compulsory subjects
   for (const req of compulsory) {
     if (req.subject === "Any other 3 subjects") {
-      const excludeSet = new Set(compulsory.map(r => r.subject).concat(["Life Orientation"]));
+      const excludeSet = new Set(
+        compulsory.map(r => canonicalize(r.subject)).concat(["Life Orientation"])
+      );
       const otherSubs = enrichedSubjects.filter(s => !excludeSet.has(s.canonical));
       const topThreeTotal = otherSubs
         .map(s => s.level)
@@ -262,12 +357,18 @@ function meetsRequirements(course, enrichedSubjects, aps) {
     }
   }
 
-  return totalAPS.some(threshold => aps >= threshold.minScore);
+  // Check APS thresholds
+  if (apsOptions) {
+    return apsOptions.some(opt => aps >= opt.minScore);
+  }
+  if (totalAPS) {
+    return aps >= totalAPS.minScore;
+  }
+  return false;
 }
 
-
 // ===== Route =====
-app.post("/check-courses", (req, res) => {
+app.post("/check-courses", async (req, res) => {
   const { subjects = [], aps } = req.body;
 
   const payloadCheck = validatePayload(subjects, aps);
@@ -284,14 +385,18 @@ app.post("/check-courses", (req, res) => {
   const serverAPS = computeAPS(enriched);
 
   const qualifiedCourses = [];
+  const response = await axios.get("http://localhost:4000/universitiesCoursers");
+  const universities = response.data;
+  console.log(universities);
+
 
   for (const uni of universities) {
     for (const course of uni.courses) {
       if (meetsRequirements(course, enriched, serverAPS)) {
         qualifiedCourses.push({
           university: uni.name,
-          faculty: uni.faculty,
-          department: uni.department,
+          faculty: uni.Faculty,
+          department: uni.Department,
           course: course.name,
           duration: course.duration,
           computedAPS: serverAPS
@@ -309,6 +414,33 @@ app.post("/check-courses", (req, res) => {
 });
 
 
+
+app.post("/vasity-infor", async (req, res) => {
+
+   try {
+    // Get the university ID/name from request body
+    const uniIDName = req.body.uniID[0];
+    console.log(uniIDName)
+
+    // Find the university in your dataset
+    const university = vasityInfor.find(
+      (uni) => uni.acronym === uniIDName || uni.name === uniIDName
+    );
+
+    if (!university) {
+      return res.status(404).json({ error: "University not found" });
+    }
+
+    // Send back the university info
+    res.json(university);
+  } catch (err) {
+    console.error("Error:", err);
+    res.status(500).json({ error: "Server error" });
+  }
+  
+
+
+});
 
 
 
