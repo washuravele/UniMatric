@@ -393,10 +393,26 @@
                      <p class="montserrat">You can get in  contact with us using our social media platforms</p>
                      <p class="montserrat">Our Social Media bring you the latest updates, more about us, and  fast replies to your message </p>
                      <div id="social-icons">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
+                          <div>
+                           <a>
+                              <img src="/imgs/icons/icons-facebook.png">
+                           </a>
+                          </div>
+                          <div>
+                             <a>
+                               <img src="/imgs/icons/icons-instagram.png">
+                             </a>
+                          </div>
+                          <div>
+                            <a>
+                               <img src="/imgs/icons/icons-linkedin.png">
+                             </a>
+                          </div>
+                          <div>
+                           <a>
+                               <img src="/imgs/icons/icons-twitter.png">
+                             </a>
+                          </div>
                      </div>
                </div>
            </div>
@@ -434,6 +450,16 @@
 
  </div>
 
+ <!--sign out -->
+ <div id="sign-out">
+    <div id="sign-out-content">
+         <p style="text-align: center;" class="montserrat">Do you want to Sign Out ?</p>
+         <div>
+              <button onclick="goToSignIn()" class="montserrat" id="sign-out-yes">Yes</button>
+              <button onclick="hideOverlay()" class="montserrat" id=sign-out-no>No</button>
+         </div>
+    </div>
+ </div>
 
  
 
@@ -452,20 +478,20 @@
 
 
     <div id="nav">
-            <div class="c" style="border: dotted 2px;" id="homePage">
+            <div class="c" style="border: dotted 2px;" id="homePage" title="Home">
               <img src="/imgs/icons/home-logo-page.PNG" alt="Home">
             </div>
-            <div class="c"  id="UniPage">
-             <img src="/imgs/icons/university-logo-page.PNG">
+            <div class="c"  id="UniPage" title="More About Universities">
+             <img src="/imgs/icons/university-logo-page.PNG" >
             </div>
-            <div class="c"   id="aboutUS">
+            <div class="c"   id="aboutUS" title="About Us">
               <img src="/imgs/icons/about-us-logo-page.PNG">
             </div>
     </div>
 
    
     <div id="out">
-         <div class="c" id="signOut">
+         <div onclick="showOverlay()" class="c" id="signOut" title="Sign Out">
            <img src="/imgs/icons/sign-out-logo-page.PNG">
          </div>
     </div>

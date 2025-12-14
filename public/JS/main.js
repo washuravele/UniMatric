@@ -301,7 +301,19 @@ $("#aboutUS").click("click",()=>{
 });
 
 
+//sign out */
+function showOverlay() {
+  document.getElementById("sign-out").style.display = "block";
+}
 
+function hideOverlay() {
+  document.getElementById("sign-out").style.display = "none";
+}
+
+ function goToSignIn() {
+        // Replace with your actual sign-in page URL
+        window.location.href = "/";
+    }
 
 
 
