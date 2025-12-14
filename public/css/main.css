@@ -1,4 +1,8 @@
-
+body{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: content-box;
+}
 #log-in{
   height: 100vh;
   display: flex;
@@ -27,7 +31,7 @@
 }
 
 .contentInfor{
-    border: 1px solid red;
+   /**/
 }
 
 
@@ -60,7 +64,7 @@
     flex-wrap: wrap;
     padding: 5px;
 }
-.c >a > img{
+.c > img{
     width: 100%;
     height: 100%;
 }
@@ -277,7 +281,6 @@ border: 2px solid;
 /*university home style */
 
 #uni{
-  border: 1px solid;
 
 }
 
@@ -290,7 +293,6 @@ border: 2px solid;
 
 /*university list style*/
 #university-list{
-  border: 1px solid blue;
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -300,11 +302,11 @@ border: 2px solid;
 }
 
 #numberOfUni{
-  border: 1px solid yellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   padding: 2px;
+  font-size: 10px;
 }
 
 .uniInforCard{
@@ -529,22 +531,22 @@ border: 2px solid;
 
 /*intro images style*/
 #uniIntro{
-  border: 1px solid red;
+  border-left: 2px dotted;
 }
 
 #introImg{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-   display: none;
-   visibility: hidden;
+  /*display: none;
+  visibility: hidden;*/
+  flex-wrap: wrap;
 }
 
 .introImg{
    width: 390px;
    height: 170px;
    padding: 5px;
-
 }
 
 #introImg1{
@@ -558,7 +560,8 @@ border: 2px solid;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
 }
 
 
@@ -573,7 +576,8 @@ border: 2px solid;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
 }
 
 
@@ -586,18 +590,19 @@ border: 2px solid;
    height: 90%;
    border-radius: 40px;
    box-shadow: 1px 1px 1px 1px black;
+   display: none;
 }
 
 #vasityName{
     display: flex;
     justify-content: center;
-    border: 1px solid yellow;
+   /* border: 1px solid yellow;*/
     flex-wrap: wrap; 
     align-items: center;
 }
 
 #vasityInfor1{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 100%;
   height: 170px;
   display: flex;
@@ -607,7 +612,7 @@ border: 2px solid;
   font-size: 10px;
 }
 #vasityAddress{
-  border: 1px solid blue;
+ /* border: 1px solid blue;*/
   width: 45%;
   height: 100%;
   display: flex;
@@ -617,14 +622,14 @@ border: 2px solid;
 #vasity-campus-ranking{
   width: 45%;
   height: 100%;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   display: flex;
    flex-direction: column;
    flex-wrap: wrap;
 }
 
 #vasityInfor2{
-    border: 1px solid purple;
+   /* border: 1px solid purple;*/
   width: 100%;
   height: 160px;
   display: flex;
@@ -635,7 +640,7 @@ border: 2px solid;
 }
 
 #vasity-application-dates{
-   border: 1px solid blue;
+  /* border: 1px solid blue;*/
   width: 45%;
   height: 100%;
   display: flex;
@@ -646,7 +651,7 @@ border: 2px solid;
 #vasityWebsites{
     width: 45%;
   height: 100%;
-  border: 1px solid green;
+ /* border: 1px solid green;*/
   display: flex;
    flex-direction: column;
    flex-wrap: wrap-reverse;
@@ -654,7 +659,7 @@ border: 2px solid;
 
 
 #vasityInfor3{
-   border: 1px solid purple;
+  /* border: 1px solid purple;*/
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -686,6 +691,142 @@ border: 2px solid;
   background-color: #000000;
   color: #f1eaea;
 }
+#vasityInfor3 > a > button:hover{
+  background-color: #000000;
+  color: #f1eaea;
+}
+
+
+
+
+
+
+
+/*about us page  style */
+
+#about-us-page{
+ /* border: 1px solid red;*/
+   padding: 10px;
+}
+
+#about-us-page-c{
+ /* border: 1px solid green;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#about-us-img{
+ /* border: 1px solid blue;*/
+  width: 30%;
+  height: 100%;
+  background-image: url("/imgs/pictures/Learner-book-reading.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  flex-direction: column;
+}
+
+#social-platforms{
+ /* border: 1px solid;*/
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#social-platforms-c{
+ /* border: 1px solid red;*/
+  width: 100%;
+  height: auto;
+}
+#social-platforms-c > div{
+  /*border: 1px solid;*/
+  width: 100%;
+  height: auto;
+  background-color:white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  padding: 2px;
+}
+
+#social-icons{
+  /* border: 1px solid red;*/
+   display: flex;
+   gap:10px;
+}
+#social-icons >div{
+  border: 1px solid;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+#social-icons >div:hover{
+  border: 2px dotted;
+}
+
+
+
+
+
+
+
+#about-us-infor{
+ /* border: 1px solid yellow;*/
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#about-us-infor-a{
+  /*border: 2px solid blue;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#about-us-infor-a >div{
+  width: 100%;
+  height: auto;
+  /*border: 1px solid;*/
+ background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  padding: 2px;
+}
+
+#why-choose-us{
+ /* border: 2px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#why-choose-us > div {
+  width: 100%;
+  height: auto;
+  /*border: 1px solid;*/
+ background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -762,11 +903,9 @@ border: 2px solid;
 
 /*respons*/
 
-@media (max-width:1303px){
+@media (max-width:1374px){
 
-    #log-in{
-     /*height: auto;*/
-   }
+
 
    #crediatials{
     width: 80%;
@@ -793,8 +932,25 @@ border: 2px solid;
    #uniCoursers{
     width: 100%;
     height: auto;
+    border: none;
    }
 
+   #courseList{
+    height: 350px;
+   }
+
+   #checkCourses >input{
+    margin-right: 20px;
+   }
+
+
+   /*vasity style*/
+   .introImg{
+   width: 320px;
+   height: 150px;
+   padding: 5px;
+   margin-bottom: 20px;
+  }
 
 }
 
@@ -837,9 +993,7 @@ border: 2px solid;
     padding: 5px;
   }
   
-  .cardImg{
-    display: none;
-  }
+ 
 
   #uniCoursers{
     margin-bottom: 30px;
@@ -849,6 +1003,53 @@ border: 2px solid;
   #footer{
     display: none;
   }
+
+
+  /*vasity style*/
+
+   #university-list{
+    width: 100%;
+  }
+   
+  #uniIntro{
+    width: 100%;
+    border: none;
+  }
+
+
+
+  .introImg{
+   width: 220px;
+   height: 100px;
+   padding: 5px;
+   margin-bottom: 20px;
+  }
+
+  #aboutVasity{
+    height: auto;
+    margin-bottom: 30px;
+  }
+   #vasityInfor3{
+    margin-bottom: 20px;
+   }
+
+
+   /*about us page */
+   #about-us-img{
+    display: none;
+    visibility: none;
+   }
+   #social-platforms{
+    width: 100%;
+    height: auto;
+   }
+   #about-us-infor{
+         width: 100%;
+    height: auto;
+   }
+
+
+ 
 }
 
 @media (max-width:536px){
@@ -865,12 +1066,42 @@ border: 2px solid;
     flex-wrap: wrap;
 }
 
+
+  /*vasity style*/
+  .uniInforCard > div > p{
+    font-size: 9px;
+  }
+
+
+  #vasityInfor2{
+        height: auto;
+        margin-bottom: 10px;
+  }
+  #vasity-application-dates{
+    height: auto;
+    width: 100%;
+    margin-left: 10px;
+  }
+  #vasityWebsites{
+    height: auto;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+
 }
 
 
-@media (max-width:424px){
+@media (max-width:434px){
    #log-in{
      height: auto;
+   }
+
+
+   /*vasity style*/
+   #vasityClose{
+    margin-left: 20px;
+    margin-top: 10px;
    }
 }
 

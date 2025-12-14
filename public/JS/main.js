@@ -415,9 +415,14 @@ function getSelectedSubjects() {
 
 
 $(".uniInforCard").on("click", async function () {
+
+  $("#introImg").css("display","none");
+  $("#aboutVasity").css("display","block");
+  
+
   const uniIDName = $(this).attr("id"); // get the ID of the clicked card
   const uniID = [uniIDName]; // store it directly as a string in the array
-
+  
   try {
     const res = await fetch("/vasity-infor", {
       method: "POST",
@@ -429,6 +434,23 @@ $(".uniInforCard").on("click", async function () {
       const vasityInfor = document.getElementById("aboutVasity");
 
       const data = await res.json();
+      
+
+
+        $(".uniInforCard").css({
+                 "opacity": "1",
+                   "border":"none"
+        });
+
+         $(`#${uniIDName}`).css({
+               "opacity": "0.5",
+                "border": "dotted 2px"
+         });
+
+    
+  
+
+
 
       vasityInfor.innerHTML = `
   <!--vasity name-->
@@ -473,7 +495,7 @@ $(".uniInforCard").on("click", async function () {
           <li>Opening Date: ${date.openingDate || date.openingLateDate}</li>
           <li>Closing Date: ${date.closingDate}</li>
         `).join("")}
-        <li>Application Website: ${data.applicationWebsite}</li>
+        <li>Application Website: <a href="${data.applicationWebsite}">${data.applicationWebsite}</a></li>
       </div>
     </div>
 
@@ -481,9 +503,9 @@ $(".uniInforCard").on("click", async function () {
     <div id="vasityWebsites">
       <h4 class="roboto">Varsity Official Website</h4>
       <div style="margin-left: 20px;" class="montserrat">
-        <li>Self Check: ${data.varsityOfficialSite.selfCheck}</li>
-        <li>ITS: ${data.varsityOfficialSite.ITS}</li>
-        <li>Site: ${data.varsityOfficialSite.site}</li>
+        <li>Self Check: <a href="${data.varsityOfficialSite.selfCheck}">${data.varsityOfficialSite.selfCheck}</a></li>
+        <li>ITS: <a href="${data.varsityOfficialSite.ITS}">${data.varsityOfficialSite.ITS}</a> </li>
+        <li>Site:<a href="${data.varsityOfficialSite.site}">${data.varsityOfficialSite.site}</a> </li>
       </div>
     </div>
   </div>
@@ -491,7 +513,7 @@ $(".uniInforCard").on("click", async function () {
   <!--vasity pros-->
   <div id="vasityInfor3">
     <a href="/imgs/logo/nwu-logo.png" download="washu.png">
-      <button class="montserrat" id="prospectors">Download Prospectors</button>
+      <button  class="montserrat" id="prospectors">${data.acronym.toUpperCase()} Prospectors</button>
     </a>
     <button class="montserrat" id="vasityClose">Close</button>
   </div>
@@ -504,4 +526,11 @@ $(".uniInforCard").on("click", async function () {
     console.error("Fetch error:", err);
   }
 
+});
+
+
+
+$(document).on("click", "#vasityClose", ()=>{
+     $("#introImg").css("display","block");
+     $("#aboutVasity").css("display","none");
 });
