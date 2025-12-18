@@ -440,89 +440,116 @@ function renderRequirements(course) {
   `;
 }
 
+function showLoading() {
+  const resultsDiv = document.getElementById("results");
+  const courseList = document.getElementById("courseList");
+
+  resultsDiv.style.display = "block";
+
+  courseList.innerHTML = `
+    <div class="cardC" style="display:flex; justify-content:center; align-items:center; height:180px;">
+      <div class="loadingBox">
+        <div class="spinner"></div>
+        <p class="montserrat" style="margin-top:10px; text-align:center;">
+          Checking courses…<br>
+          <small>Server waking up ⏳</small>
+        </p>
+      </div>
+    </div>
+  `;
+}
 
   
 
 
 document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
- try {
-      const subjects = getSelectedSubjects();
-      const aps = Number(document.getElementById("aps").textContent);
+  try {
+    const subjects = getSelectedSubjects();
+    const aps = Number(document.getElementById("aps").textContent);
 
-      if (!subjects.length) {
-        alert("Please select at least one subject and enter percentages.");
-        return;
-      }
-        validateSubjectSelection(subjects);
-
-        const res = await fetch("/check-courses", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ subjects, aps })
-      });
-
-
-        const data = await res.json();
-
-        const resultsDiv = document.getElementById("results");
-        const courseList = document.getElementById("courseList");
-
-        courseList.innerHTML = ""; // clear old results
-        resultsDiv.style.display = "block";
-
-
-
-        if (!data.qualified || data.courses.length === 0) {
-            courseList.innerHTML = `
-                <p style="color:red; text-align: center; text-decoration: 2px dotted underline;">You do not qualify for any courses.</p>
-            `;
-            return;
-        }
-        alert(data.courses.university);
-
-        data.courses.forEach(c => {
-            courseList.innerHTML += `
-                <!--courses card-->
-                             <div class="cardC">
-                                 <!--courses img-->
-                                 <div class="cardImg">
-                                        <img src="/imgs/logo/${c.acronym}-logo.png">
-                                 </div>
-                                 <!--course infor-->
-                                 <div class="courseInfor" style="font-size: 12px;">
-                                       
-                                 <div class="basicInfo">
-                                        <p  class="montserrat" style="text-align:center; text-decoration: underline;">
-                                               <strong>${c.university}</strong>
-                                         </p>
-                                         <p class="montserrat" style="text-align:center;"><strong>${c.course}</strong></p>
-                                         <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
-                                         <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
-                                         <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
-                                         <p class="montserrat"><strong>Your APS:</strong> ${c.computedAPS}</p>
-                                  </div>
-
-                                 
-                                 <div class="requirements" style="display:none; margin-top:8px; font-size: 10px;">
-                                     ${renderRequirements(c)}
-                                 </div>
-
-                                 </div>
-                             </div>
-            `;
-        });
-   
-              if (!data.validRequest) {
-        alert(`Validation error: ${data.message}`);
-        return;
-      }
-
-    } catch (err) {
-      alert(err.message || "Something went wrong. Please check your inputs.");
+    if (!subjects.length) {
+      alert("Please select at least one subject and enter percentages.");
+      return;
     }
 
+    validateSubjectSelection(subjects);
 
+    // 👉 SHOW LOADING
+    showLoading();
+
+    const res = await fetch("/check-courses", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ subjects, aps })
+    });
+
+    const data = await res.json();
+
+    const courseList = document.getElementById("courseList");
+
+    // ❌ validation failed
+    if (!data.validRequest) {
+      courseList.innerHTML = `
+        <p style="color:red; text-align:center;">
+          ${data.message}
+        </p>
+      `;
+      return;
+    }
+
+    // ❌ no courses
+    if (!data.qualified || data.courses.length === 0) {
+      courseList.innerHTML = `
+        <p style="color:red; text-align:center; text-decoration: underline dotted;">
+          You do not qualify for any courses.
+        </p>
+      `;
+      return;
+    }
+
+    // ✅ clear loading
+    courseList.innerHTML = "";
+
+    // ✅ render courses
+    data.courses.forEach(c => {
+      courseList.innerHTML += `
+        <div class="cardC">
+          <div class="cardImg">
+            <img src="/imgs/logo/${c.acronym}-logo.png">
+          </div>
+
+          <div class="courseInfor" style="font-size: 12px;">
+            <div class="basicInfo">
+              <p class="montserrat" style="text-align:center; text-decoration: underline;">
+                <strong>${c.university}</strong>
+              </p>
+              <p class="montserrat" style="text-align:center;">
+                <strong>${c.course}</strong>
+              </p>
+              <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
+              <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
+              <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
+              <p class="montserrat"><strong>Your APS:</strong> ${c.computedAPS}</p>
+            </div>
+
+            <div class="requirements" style="display:none; margin-top:8px; font-size:10px;">
+              ${renderRequirements(c)}
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+  } catch (err) {
+    const courseList = document.getElementById("courseList");
+    courseList.innerHTML = `
+      <p style="color:red; text-align:center;">
+        Server is waking up. Please try again in a moment.
+      </p>
+    `;
+  }
 });
+
 
 
 document.addEventListener("click", (e) => {

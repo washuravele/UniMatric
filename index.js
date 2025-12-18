@@ -319,6 +319,8 @@ function meetsRequirements(course, enrichedSubjects, aps) {
 
 
 
+
+
 // Express route
 app.post("/check-courses", async (req, res) => {
   const { subjects = [], aps } = req.body;
