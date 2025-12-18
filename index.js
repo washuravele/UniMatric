@@ -132,7 +132,7 @@ if(hours <13){
 app.post("/home", async (req, res) => {
   const { ID, password } = req.body;
 
-  if (!/^\d{14}$/.test(ID)) {
+  if (!/^\d{13}$/.test(ID)) {
     return res.render("index.ejs", {
       display1: "none",
       display2: "none",
@@ -159,7 +159,7 @@ app.post("/home", async (req, res) => {
 
   const user = results.rows[0];
 
-  if (user.password === password) {
+  if (user.user_password === password) {
     return res.render("main.ejs", {
       firstName: user.first_name.charAt(0).toUpperCase() + user.first_name.slice(1),
       lastName: user.last_name.charAt(0).toUpperCase() + user.last_name.slice(1),
