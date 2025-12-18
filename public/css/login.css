@@ -1,7 +1,30 @@
-body{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: content-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+img {
+  display: block;
+}
+
+/* Icon images*/
+.c {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /*login style */
