@@ -129,7 +129,7 @@ if(hours <13){
 
 
 //login form*/
-app.post("/home", async (req, res) => {
+app.post("/main", async (req, res) => {
   const { ID, password } = req.body;
 
   if (!/^\d{13}$/.test(ID)) {
@@ -138,7 +138,7 @@ app.post("/home", async (req, res) => {
       display2: "none",
       display3: "none",
       display4: "flex",
-      feedback: "ID Number must be exactly 14 digits"
+      feedback: "ID Number must be exactly 13 digits"
     });
   }
 
