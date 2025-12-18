@@ -337,7 +337,7 @@ app.post("/check-courses", async (req, res) => {
   const serverAPS = computeAPS(enriched);
 
   const qualifiedCourses = [];
-  const response = await axios.get("http://localhost:4000/universitiesCoursers");
+  const response = await axios.get("https://south-africa-universities-courses-api.onrender.com/universitiesCoursers");
   const universities = response.data;
 
   for (const uni of universities) {
