@@ -1,12 +1,10 @@
 let count = 1;
 const maxSubjects = 7;
 
-// Compulsory subjects
-const compulsorySubjects = [
+// Subject groups
+const homeLanguageGroup = [
   "English Home Language",
-  "English First Additional Language",
   "Afrikaans Huistaal",
-  "Afrikaans Eerste Additionele Taal",
   "Sesotho Home Language",
   "Siswati Home Language",
   "Setswana Home Language",
@@ -15,14 +13,22 @@ const compulsorySubjects = [
   "isiNdebele Home Language",
   "Sepedi Home Language",
   "Xitsonga Home Language",
-  "Tshivenda Home Language",
+  "Tshivenda Home Language"
+];
+
+const firstAdditionalLanguageGroup = [
+  "English First Additional Language",
+  "Afrikaans Eerste Additionele Taal"
+];
+
+const compulsoryGroup = [
   "Mathematics",
   "Mathematical Literacy",
+  "Technical Mathematics",
   "Life Orientation"
 ];
 
-// Elective subjects
-const electiveSubjects = [
+const electiveGroup = [
   "Economics",
   "Physical Sciences",
   "Life Sciences",
@@ -31,7 +37,10 @@ const electiveSubjects = [
   "Accounting",
   "History",
   "Geography",
-  "Religion Studies"
+  "Religion Studies",
+  "Civil Technology",
+  "EGD",
+  "CAT"
 ];
 
 // Helper to build <option> list
@@ -52,11 +61,17 @@ function addSubject() {
       <label class="montserrat">Subject:</label>
       <select class="subjectSelect">
         <option value="">-- Select Subject --</option>
+        <optgroup label="Home Language">
+          ${buildOptions(homeLanguageGroup)}
+        </optgroup>
+        <optgroup label="Additional Language">
+             ${buildOptions(firstAdditionalLanguageGroup)}
+        </optgroup>
         <optgroup label="Compulsory">
-          ${buildOptions(compulsorySubjects)}
+          ${buildOptions(compulsoryGroup)}
         </optgroup>
         <optgroup label="Electives">
-          ${buildOptions(electiveSubjects)}
+          ${buildOptions(electiveGroup)}
         </optgroup>
       </select>
       <label class="montserrat">Percentage:</label>
@@ -324,8 +339,43 @@ function hideOverlay() {
 
 
 
+function validateSubjectSelection(subjects) {
+  const selected = subjects.map(s => s.subject);
 
+  // Home Language: must choose exactly 1
+  const homeLangCount = selected.filter(s => homeLanguageGroup.includes(s)).length;
+  if (homeLangCount !== 1) {
+    throw new Error("You must choose exactly ONE Home Language subject.");
+  }
 
+  // First Additional Language: must choose exactly 1
+  const addLangCount = selected.filter(s => firstAdditionalLanguageGroup.includes(s)).length;
+  if (addLangCount !== 1) {
+    throw new Error("You must choose exactly ONE First Additional Language subject.");
+  }
+
+  // Compulsory: must choose 2, and Life Orientation must always be included
+  const compulsoryCount = selected.filter(s => compulsoryGroup.includes(s)).length;
+  if (compulsoryCount < 2) {
+    throw new Error("You must choose TWO compulsory subjects (Life Orientation + one of Mathematics/Math Lit/Technical Math).");
+  }
+  if (!selected.includes("Life Orientation")) {
+    throw new Error("Life Orientation is compulsory and must be included.");
+  }
+
+  // Electives: must choose exactly 3
+  const electiveCount = selected.filter(s => electiveGroup.includes(s)).length;
+  if (electiveCount !== 3) {
+    throw new Error("You must choose exactly THREE elective subjects.");
+  }
+
+  // Total subjects must equal 7
+  if (selected.length !== 7) {
+    throw new Error("You must select exactly 7 subjects in total.");
+  }
+
+  return true; // passes validation
+}
 
 
 
@@ -357,8 +407,45 @@ function getSelectedSubjects() {
     return subjects;
   }
 
-  document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
-  try {
+
+function renderRequirements(course) {
+  const { compulsory = [], additionalSubjects, apsOptions = [] } = course.requirements;
+
+  return `
+    <p class="montserrat"><strong>APS Requirements</strong></p>
+    <ul>
+      ${apsOptions.map(a =>
+        `<li class="montserrat">APS ≥ ${a.minScore} (${a.note || ""})</li>`
+      ).join("")}
+    </ul>
+
+    <p class="montserrat"><strong>Compulsory Subjects</strong></p>
+    <ul>
+      ${compulsory.map(c =>
+        `<li class="montserrat">${c.subject} – Level ${c.minLevel}+</li>`
+      ).join("")}
+    </ul>
+
+    ${additionalSubjects ? `
+      <p class="montserrat"><strong>Additional Subjects</strong></p>
+      <p class="montserrat">
+        Any ${additionalSubjects.count} subjects , 
+        <em>${additionalSubjects.note || ""}</em>
+      </p>
+    ` : ""}
+
+    <p class="montserrat" style="color:green;">
+      ✔ You qualify because your subjects and APS meet these requirements
+    </p>
+  `;
+}
+
+
+  
+
+
+document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
+ try {
       const subjects = getSelectedSubjects();
       const aps = Number(document.getElementById("aps").textContent);
 
@@ -366,6 +453,7 @@ function getSelectedSubjects() {
         alert("Please select at least one subject and enter percentages.");
         return;
       }
+        validateSubjectSelection(subjects);
 
         const res = await fetch("/check-courses", {
         method: "POST",
@@ -390,6 +478,7 @@ function getSelectedSubjects() {
             `;
             return;
         }
+        alert(data.courses.university);
 
         data.courses.forEach(c => {
             courseList.innerHTML += `
@@ -397,16 +486,27 @@ function getSelectedSubjects() {
                              <div class="cardC">
                                  <!--courses img-->
                                  <div class="cardImg">
-                                        <img src="/imgs/logo/VUT-LOGO.png">
+                                        <img src="/imgs/logo/${c.acronym}-logo.png">
                                  </div>
                                  <!--course infor-->
                                  <div class="courseInfor" style="font-size: 12px;">
-                                       <p class="montserrat" style="text-align: center; text-decoration: underline;"> <strong>${c.university}</strong></p>
-                                       <p class="montserrat" style="text-align:center;"><strong> ${c.course}</strong></p>
-                                       <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
-                                       <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
-                                       <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
-                                       <p class="montserrat"><strong>computedAPS:</strong> ${c.computedAPS}</p>
+                                       
+                                 <div class="basicInfo">
+                                        <p  class="montserrat" style="text-align:center; text-decoration: underline;">
+                                               <strong>${c.university}</strong>
+                                         </p>
+                                         <p class="montserrat" style="text-align:center;"><strong>${c.course}</strong></p>
+                                         <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
+                                         <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
+                                         <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
+                                         <p class="montserrat"><strong>Your APS:</strong> ${c.computedAPS}</p>
+                                  </div>
+
+                                 
+                                 <div class="requirements" style="display:none; margin-top:8px; font-size: 10px;">
+                                     ${renderRequirements(c)}
+                                 </div>
+
                                  </div>
                              </div>
             `;
@@ -423,6 +523,40 @@ function getSelectedSubjects() {
 
 
 });
+
+
+document.addEventListener("click", (e) => {
+  const imgWrapper = e.target.closest(".cardImg");
+  if (!imgWrapper) return;
+
+  const img = imgWrapper.querySelector("img"); 
+  const card = imgWrapper.closest(".cardC");
+  const basicInfo = card.querySelector(".basicInfo");
+  const requirements = card.querySelector(".requirements");
+
+  const showingBasic = basicInfo.style.display !== "none";
+
+  if (showingBasic) {
+    // hide course info → show requirements
+    basicInfo.style.display = "none";
+    requirements.style.display = "block";
+
+    // style ONLY this image
+    img.style.border = "2px solid";
+    img.style.opacity = "0.5";
+
+  } else {
+    // hide requirements → show course info
+    requirements.style.display = "none";
+    basicInfo.style.display = "block";
+
+    img.style.border = "2px dotted";
+    img.style.opacity = "1";
+  }
+});
+
+
+
 
 
 

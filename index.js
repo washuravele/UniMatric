@@ -2,11 +2,15 @@ import e from "express";
 import bodyParser from "body-parser";
 import PG from "pg";
 import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
 
-const port= 3000;
+const port = process.env.PORT || 3000;
+
+
 const app= e();
 
-const db = new PG.Client({
+/*const db = new PG.Client({
    user:"postgres",
    host:"localhost",
    database:"UniMatricDB",
@@ -14,7 +18,21 @@ const db = new PG.Client({
    port:5432,
 });
 
-db.connect();
+db.connect();*/
+const db = new PG.Client({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
+
+db.connect()
+  .then(() => console.log("Connected to Render PostgreSQL"))
+  .catch(err => console.error(" DB connection error:", err));
 
 
 
@@ -22,123 +40,7 @@ app.use(e.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(e.json());
 
-/*const universities = [ {
-  id: "01",
-  name: "Vaal University of Technology",
-  Faculty: "Faculty of Applied & Computer Sciences",
-  Department: "DEPARTMENT OF NATURAL SCIENCES",
-  courses: [
-    {
-      name: "Dip: Analytical Chemistry",
-      duration: "3 years",
-      requirements: {
-        compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
-          { subject: "Physical Science", minLevel: 4 },
-          { subject: "Any other 3 subjects", minTotalLevel: 9 }
-        ],
-        totalAPS: { minScore: 21, note: "exclude LO" }
-      }
-    },
-    {
-      name: "Dip: Biotechnology",
-      duration: "3 years",
-      requirements: {
-        compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
-          { subject: "Physical Science", minLevel: 4 },
-          { subject: "Life Sciences", minLevel: 4 }
-        ],
-        totalAPS: { minScore: 23, note: "exclude LO" }
-      }
-    },
-    {
-      name: "Dip: Agricultural Management",
-      duration: "3 years",
-      requirements: {
-        compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics or Technical Mathematics", minLevel: 3 },
-          { subject: "Mathematics Literacy", minLevel: 4 },
-          { subject: "Agriculture / Life Science", minLevel: 3 }
-        ],
-        apsOptions: [
-          { minScore: 21, note: "Maths/Tech Maths, exclude LO" },
-          { minScore: 22, note: "Maths Literacy, exclude LO" }
-        ]
-      }
-    },
-    {
-      name: "Dip: Environmental Science",
-      duration: "3 years",
-      requirements: {
-        compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics", minLevel: 4 },
-          { subject: "Physical Science", minLevel: 4 }
-        ],
-        totalAPS: { minScore: 21, note: "exclude LO" }
-      }
-    },
-    {
-      name: "Bachelor of Health Sciences: Medical Laboratory Science",
-      duration: "4 years",
-      requirements: {
-        compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics", minLevel: 4 },
-          { subject: "Physical Science", minLevel: 4 },
-          { subject: "Life Science", minLevel: 5 }
-        ],
-        totalAPS: { minScore: 27, note: "exclude LO" }
-      }
-    }
-  ]
-},
 
-{
-  id: "01",
-  name: "Vaal University of Technology",
-  Faculty: "Faculty of Applied & Computer Sciences",
-  Department: "DEPARTMENT OF COMPUTER SCIENCES",
-  courses: [
-    {
-      name: "Dip: Information Technology",
-      duration: "3 years",
-      requirements: {
-        compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
-          { subject: "Mathematical Literacy", minLevel: 6 },
-          { subject: "Other 4 Subjects (excluding LO)", minTotalLevel: 6 }
-        ],
-        apsOptions: [
-          { minScore: 26, note: "Maths/Tech Maths, exclude LO" },
-          { minScore: 28, note: "Maths Literacy, exclude LO" }
-        ]
-      }
-    },
-    {
-      name: "Dip: Extended Information Technology Programme",
-      duration: "4 years",
-      requirements: {
-       compulsory: [
-          { subject: "English", minLevel: 4 },
-          { subject: "Mathematics or Technical Mathematics", minLevel: 4 },
-          { subject: "Mathematical Literacy", minLevel: 6 },
-          { subject: "Other 4 Subjects (excluding LO)", minTotalLevel: 6 }
-        ],
-        apsOptions: [
-          { minScore: 24, note: "Maths/Tech Maths, exclude LO" },
-          { minScore: 26, note: "Maths Literacy, exclude LO" }
-        ]
-      }
-    }
-  ]
-},
-];*/
 const vasityInfor = [
   {
     name: "University of Johannesburg",
@@ -227,44 +129,55 @@ if(hours <13){
 
 
 //login form*/
-app.post("/home", async (req,res)=>{
-  const {ID,password} = req.body;
-  const results = await db.query("SELECT * From user_data where id_number = $1",[ID]);
-  
- if(results.rows.length === 0 ){
-  console.log("user not found");
-  return res.render("index.ejs",({
-     display1: "none",
-     display2: "none",
-     display3: "none",
-     display4: "flex",
-     feedback :"user not found , check your ID Number",
-   }));
- }
+app.post("/home", async (req, res) => {
+  const { ID, password } = req.body;
 
- const user = results.rows[0]
- console.log(user);
- if(user.user_password === password){
-  console.log("login successful");
-  return res.render("home.ejs",({
-    firstName : `${user.first_name.substring(0,1).toUpperCase()}${user.first_name.substring(1).toLowerCase()}`,
-    lastName : `${user.last_name.substring(0,1).toUpperCase()}${user.last_name.substring(1).toLowerCase()}`,
-    fIntial:`${user.first_name.substring(0,1).toUpperCase()}`,
-    lIntial: `${user.last_name.substring(0,1).toUpperCase()}`,
-    greetings : greetings,
-    qualified: false,
-    courses: ""
-  }));
- }else{
-  console.log("Incorrect password");
-  return res.render("index.ejs",({
-     display1: "none",
-     display2: "none",
-     display3: "none",
-     display4: "flex",
-     feedback :"Incorrect password check your password",
-   }));
- }
+  if (!/^\d{14}$/.test(ID)) {
+    return res.render("index.ejs", {
+      display1: "none",
+      display2: "none",
+      display3: "none",
+      display4: "flex",
+      feedback: "ID Number must be exactly 14 digits"
+    });
+  }
+
+  const results = await db.query(
+    "SELECT * FROM user_data WHERE id_number = $1",
+    [ID]
+  );
+
+  if (results.rows.length === 0) {
+    return res.render("index.ejs", {
+      display1: "none",
+      display2: "none",
+      display3: "none",
+      display4: "flex",
+      feedback: "User not found, check your ID Number"
+    });
+  }
+
+  const user = results.rows[0];
+
+  if (user.password === password) {
+    return res.render("main.ejs", {
+      firstName: user.first_name.charAt(0).toUpperCase() + user.first_name.slice(1),
+      lastName: user.last_name.charAt(0).toUpperCase() + user.last_name.slice(1),
+      fIntial: user.first_name.charAt(0).toUpperCase(),
+      lIntial: user.last_name.charAt(0).toUpperCase(),
+      greetings,
+      qualified: false,
+      courses: ""
+    });
+  }
+
+  return res.render("index.ejs", {
+    display1: "none",
+    display2: "none",
+    display3: "none",
+    display4: "flex",
+    feedback: "Incorrect password"
+  });
 });
 
 
@@ -272,21 +185,51 @@ app.post("/home", async (req,res)=>{
 
 
 
-function canonicalize(subjectName) {
-  const s = subjectName.trim().toLowerCase();
-  if (s.includes("english")) return "English";
-  if (s.includes("mathematics literacy")) return "Mathematics Literacy";
-  if (s.includes("mathematics")) return "Mathematics";
-  if (s.includes("physical science")) return "Physical Science";
-  if (s.includes("life science")) return "Life Sciences";
-  if (s.includes("agricultural")) return "Agriculture";
+
+// Canonicalize subject names to match normalized JSON
+function canonicalize(subject) {
+  if (!subject) return "";
+
+  const s = subject.toLowerCase();
+
+  // Core subjects
   if (s.includes("life orientation")) return "Life Orientation";
-  if (s.includes("life science")) return "Life Sciences";
-  if (s.includes("biology")) return "Life Sciences";
-   if (s.includes("accounting")) return "Accounting";
-   if (s.includes("technical science")) return "Physical Science";
-  return subjectName.trim();
+  if (s.includes("english")) return "English";
+
+  // Maths variants
+  if (s.includes("mathematical literacy")) return "Mathematical Literacy";
+  if (s.includes("technical mathematics")) return "Technical Mathematics";
+  if (s.trim() === "mathematics" || s.includes("mathematics")) return "Mathematics";
+
+  // Sciences
+  if (s.includes("physical science") || s.includes("technical science"))
+    return "Physical Sciences";
+  if (s.includes("life science") || s.includes("biology"))
+    return "Life Sciences";
+
+  // Other compulsory subjects
+  if (s.includes("agriculture")) return "Agriculture";
+  if (s.includes("accounting")) return "Accounting";
+  if (s.includes("business")) return "Business Studies";
+  if (s.includes("consumer studies")) return "Consumer Studies";
+  if (s.includes("hospitality") || s.includes("tourism") || s.includes("catering"))
+    return "Hospitality / Tourism / Catering";
+  if (s.includes("geography")) return "Geography";
+  if (s.includes("history")) return "History";
+
+  // Languages
+  if (s.includes("additional language")) return "Additional Language";
+  if (s.includes("other language")) return "Other Language";
+  if (s.includes("language of teaching")) return "Language of Teaching & Learning";
+
+  return subject.trim();
 }
+
+
+
+
+
+
 
 // NSC Achievement Level from percentage
 function achievementLevel(percentage) {
@@ -298,6 +241,7 @@ function achievementLevel(percentage) {
   if (percentage >= 30) return 2;
   return 1; // < 30%
 }
+
 
 // Compute APS excluding Life Orientation
 function computeAPS(subjects) {
@@ -331,43 +275,51 @@ function validatePayload(subjects, aps) {
 }
 
 
-function meetsRequirements(course, enrichedSubjects, aps) {
-  const { compulsory, totalAPS, apsOptions } = course.requirements;
 
-  // Check compulsory subjects
+// Check if student meets course requirements
+function meetsRequirements(course, enrichedSubjects, aps) {
+  const { compulsory = [], additionalSubjects, apsOptions } = course.requirements;
+
+  // 🔹 Compulsory subject checks
   for (const req of compulsory) {
-    if (req.subject === "Any other 3 subjects") {
-      const excludeSet = new Set(
-        compulsory.map(r => canonicalize(r.subject)).concat(["Life Orientation"])
+    // Handle OR conditions (e.g. "Mathematics or Technical Mathematics or Mathematical Literacy")
+    const variants = req.subject.split(" or ").map(v => v.trim());
+    const passed = variants.some(v => {
+      const found = enrichedSubjects.find(
+        s => s.canonical === canonicalize(v)
       );
-      const otherSubs = enrichedSubjects.filter(s => !excludeSet.has(s.canonical));
-      const topThreeTotal = otherSubs
-        .map(s => s.level)
-        .sort((a, b) => b - a)
-        .slice(0, 3)
-        .reduce((sum, lvl) => sum + lvl, 0);
-      if (topThreeTotal < req.minTotalLevel) return false;
-    } else {
-      const variants = req.subject.split(" or ");
-      const found = variants.some(v => {
-        const subj = enrichedSubjects.find(s => s.canonical === canonicalize(v));
-        return subj && subj.level >= req.minLevel;
-      });
-      if (!found) return false;
-    }
+      return found && found.level >= req.minLevel;
+    });
+
+    if (!passed) return false;
   }
 
-  // Check APS thresholds
+  // 🔹 Handle additionalSubjects (e.g. "Any other 3 subjects excluding LO")
+  if (additionalSubjects) {
+    const exclude = new Set(["Life Orientation"]);
+    const others = enrichedSubjects
+      .filter(s => !exclude.has(s.canonical))
+      .map(s => s.level)
+      .sort((a, b) => b - a)
+      .slice(0, additionalSubjects.count);
+
+    const sum = others.reduce((a, b) => a + b, 0);
+    if (sum < (additionalSubjects.minTotalLevel || 0)) return false;
+  }
+
+  // 🔹 APS check
   if (apsOptions) {
     return apsOptions.some(opt => aps >= opt.minScore);
   }
-  if (totalAPS) {
-    return aps >= totalAPS.minScore;
-  }
+
   return false;
 }
 
-// ===== Route =====
+
+
+
+
+// Express route
 app.post("/check-courses", async (req, res) => {
   const { subjects = [], aps } = req.body;
 
@@ -387,8 +339,6 @@ app.post("/check-courses", async (req, res) => {
   const qualifiedCourses = [];
   const response = await axios.get("http://localhost:4000/universitiesCoursers");
   const universities = response.data;
-  console.log(universities);
-
 
   for (const uni of universities) {
     for (const course of uni.courses) {
@@ -399,7 +349,9 @@ app.post("/check-courses", async (req, res) => {
           department: uni.Department,
           course: course.name,
           duration: course.duration,
-          computedAPS: serverAPS
+          computedAPS: serverAPS,
+          requirements: course.requirements,
+          acronym:uni.acronym
         });
       }
     }
