@@ -404,7 +404,7 @@ border: 2px solid;
 
 /*universities*/
 #cput{
-  background-image: url("/imgs/logo/cput-logo.jpg");
+  background-image: url("/imgs/logo/cput-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
@@ -419,7 +419,7 @@ border: 2px solid;
 
 
 #cut{
-  background-image: url("/imgs/logo/cut-logo.jpg");
+  background-image: url("/imgs/logo/cut-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
@@ -476,7 +476,7 @@ border: 2px solid;
 }
 
 #um{
-  background-image: url("/imgs/logo/um-logo.jpg");
+  background-image: url("/imgs/logo/um-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
@@ -574,7 +574,7 @@ border: 2px solid;
 }
 
 #wits{
-  background-image: url("/imgs/logo/wits-logo.jpg");
+  background-image: url("/imgs/logo/wits-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
