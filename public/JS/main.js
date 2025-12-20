@@ -435,34 +435,17 @@ function renderRequirements(course) {
     ` : ""}
 
     <p class="montserrat" style="color:green;">
-      ✔ You qualify because your subjects and APS meet these requirements
+       You qualify because your subjects and APS meet these requirements
     </p>
   `;
 }
 
-function showLoading() {
-  const resultsDiv = document.getElementById("results");
-  const courseList = document.getElementById("courseList");
-
-  resultsDiv.style.display = "block";
-
-  courseList.innerHTML = `
-    <div class="cardC" style="display:flex; justify-content:center; align-items:center; height:180px;">
-      <div class="loadingBox">
-        <div class="spinner"></div>
-        <p class="montserrat" style="margin-top:10px; text-align:center;">
-          Checking courses…<br>
-          <small>Server waking up ⏳</small>
-        </p>
-      </div>
-    </div>
-  `;
-}
 
   
 
 
-document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
+document.querySelector("#checkCourses input[type='button']")
+.addEventListener("click", async () => {
   try {
     const subjects = getSelectedSubjects();
     const aps = Number(document.getElementById("aps").textContent);
@@ -474,8 +457,28 @@ document.querySelector("#checkCourses input[type='button']").addEventListener("c
 
     validateSubjectSelection(subjects);
 
-    // 👉 SHOW LOADING
-    showLoading();
+    const resultsDiv = document.getElementById("results");
+    const courseList = document.getElementById("courseList");
+
+    courseList.innerHTML = "";
+    resultsDiv.style.display = "block";
+
+    /* 🔄 SHOW LOADING CARD */
+      courseList.innerHTML = `
+  <div class="cardC loading">
+    <div style="text-align:center;">
+      <div class="loader"></div>
+      <p style="
+        margin-top:10px;
+        font-size:12px;
+        font-family:Montserrat, sans-serif;
+        opacity:0.7;
+      ">
+        Still checking courses, please wait…
+      </p>
+    </div>
+  </div>
+`;
 
     const res = await fetch("/check-courses", {
       method: "POST",
@@ -485,42 +488,34 @@ document.querySelector("#checkCourses input[type='button']").addEventListener("c
 
     const data = await res.json();
 
-    const courseList = document.getElementById("courseList");
+    /* ❌ REMOVE LOADER */
+    courseList.innerHTML = "";
 
-    // ❌ validation failed
     if (!data.validRequest) {
-      courseList.innerHTML = `
-        <p style="color:red; text-align:center;">
-          ${data.message}
-        </p>
-      `;
+      alert(`Validation error: ${data.message}`);
       return;
     }
 
-    // ❌ no courses
     if (!data.qualified || data.courses.length === 0) {
       courseList.innerHTML = `
-        <p style="color:red; text-align:center; text-decoration: underline dotted;">
+        <p style="color:red; text-align:center; text-decoration:2px dotted underline;">
           You do not qualify for any courses.
         </p>
       `;
       return;
     }
 
-    // ✅ clear loading
-    courseList.innerHTML = "";
-
-    // ✅ render courses
+    /* ✅ RENDER COURSES */
     data.courses.forEach(c => {
       courseList.innerHTML += `
         <div class="cardC">
           <div class="cardImg">
-            <img src="/imgs/logo/${c.acronym}-logo.png">
+            <img src="/imgs/logo/${c.acronym}-logo.png" alt="${c.university}">
           </div>
 
-          <div class="courseInfor" style="font-size: 12px;">
+          <div class="courseInfor" style="font-size:12px;">
             <div class="basicInfo">
-              <p class="montserrat" style="text-align:center; text-decoration: underline;">
+              <p class="montserrat" style="text-align:center; text-decoration:underline;">
                 <strong>${c.university}</strong>
               </p>
               <p class="montserrat" style="text-align:center;">
@@ -541,12 +536,8 @@ document.querySelector("#checkCourses input[type='button']").addEventListener("c
     });
 
   } catch (err) {
-    const courseList = document.getElementById("courseList");
-    courseList.innerHTML = `
-      <p style="color:red; text-align:center;">
-        Server is waking up. Please try again in a moment.
-      </p>
-    `;
+    document.getElementById("courseList").innerHTML = "";
+    alert(err.message || "Something went wrong. Please check your inputs.");
   }
 });
 
