@@ -486,7 +486,13 @@ document.querySelector("#checkCourses input[type='button']")
       body: JSON.stringify({ subjects, aps })
     });
 
-    const data = await res.json();
+    const contentType = res.headers.get("content-type");
+
+     if (!contentType || !contentType.includes("application/json")) {
+        throw new Error("Server is waking up. Please wait 30 seconds and try again.");
+    }
+const data = await res.json();
+
 
     /* ❌ REMOVE LOADER */
     courseList.innerHTML = "";
