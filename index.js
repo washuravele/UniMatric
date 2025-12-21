@@ -317,7 +317,9 @@ function meetsRequirements(course, enrichedSubjects, aps) {
 
 
 
-
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
 
 // Express route
 app.post("/check-courses", async (req, res) => {
