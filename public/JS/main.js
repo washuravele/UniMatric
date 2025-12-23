@@ -470,6 +470,7 @@ async function postWithRetry(url, options, retryDelay = 3000) {
 
 
 
+
 document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
   
   const btn = document.querySelector("#checkCourses input[type='button']");
@@ -515,11 +516,14 @@ document.querySelector("#checkCourses input[type='button']").addEventListener("c
   </div>
 `;
 
-    const data = await postWithRetry("/check-courses", {
+   const res = await fetch("/check-courses", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ subjects, aps })
 });
+
+const data = await res.json();
+
 
 
 

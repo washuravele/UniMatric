@@ -325,6 +325,18 @@ function meetsRequirements(course, enrichedSubjects, aps) {
   return false;
 }
 
+async function getWithRetry(url, retries = 10, delay = 3000) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const res = await axios.get(url, { timeout: 8000 });
+      return res.data;
+    } catch (err) {
+      console.log(`External API sleeping… retry ${i + 1}/${retries}`);
+      await new Promise(r => setTimeout(r, delay));
+    }
+  }
+  throw new Error("Courses API unavailable");
+}
 
 
 app.get("/health", (req, res) => {
@@ -349,8 +361,18 @@ app.post("/check-courses", async (req, res) => {
   const serverAPS = computeAPS(enriched);
 
   const qualifiedCourses = [];
-  const response = await axios.get("https://south-africa-universities-courses-api.onrender.com/universitiesCoursers");
-  const universities = response.data;
+ let universities;
+try {
+  universities = await getWithRetry(
+    "https://south-africa-universities-courses-api.onrender.com/universitiesCoursers"
+  );
+} catch (err) {
+  return res.json({
+    validRequest: false,
+    message: "Courses service is waking up. Please wait a moment and try again."
+  });
+}
+
 
   for (const uni of universities) {
     for (const course of uni.courses) {
