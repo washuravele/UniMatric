@@ -9,6 +9,16 @@ const port = process.env.PORT || 3000;
 
 
 const app= e();
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// ✅ EJS setup (THIS IS THE KEY)
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
 
 /*const db = new PG.Client({
    user:"postgres",
@@ -101,7 +111,7 @@ const vasityInfor = [
 app.get("/",(req,res)=>{
    const displayNone = "none";
    const displayFlex = "flex";
-   res.render("index.ejs",({
+   res.render("log-in.ejs",({
      display1: "block",
      display2: "block",
      display3: "block",
@@ -133,7 +143,7 @@ app.post("/main", async (req, res) => {
   const { ID, password } = req.body;
 
   if (!/^\d{13}$/.test(ID)) {
-    return res.render("index.ejs", {
+    return res.render("log-in.ejs", {
       display1: "none",
       display2: "none",
       display3: "none",
@@ -148,7 +158,7 @@ app.post("/main", async (req, res) => {
   );
 
   if (results.rows.length === 0) {
-    return res.render("index.ejs", {
+    return res.render("log-in.ejs", {
       display1: "none",
       display2: "none",
       display3: "none",
@@ -171,7 +181,7 @@ app.post("/main", async (req, res) => {
     });
   }
 
-  return res.render("index.ejs", {
+  return res.render("log-in.ejs", {
     display1: "none",
     display2: "none",
     display3: "none",
@@ -428,7 +438,7 @@ app.post("/create-new-account", async(req,res)=>{
 
   try{
     await db.query("INSERT INTO user_data values($1,$2,$3,$4,$5,$6)", [id,firstname,lastname,email,school,password]);
-    res.render("index.ejs",({
+    res.render("log-in.ejs",({
      display1: "none",
      display2: "none",
      display3: "none",
@@ -436,7 +446,7 @@ app.post("/create-new-account", async(req,res)=>{
      feedback: "Succefully create new account. Use your id and password to log in."
    }));
   } catch (err) {
-     res.render("index.ejs",({
+     res.render("log-in.ejs",({
      display1: "none",
      display2: "none",
      display3: "none",
@@ -455,7 +465,7 @@ app.post("/reset-account", async(req,res)=>{
 
   if (idNumber.rows.length >= 1){
      await db.query("update user_data set user_password = $1 where id_number = $2 and email_address = $3",[newPassword,IdNumber,email]);
-     res.render("index.ejs",({
+     res.render("log-in.ejs",({
      display1: "none",
      display2: "none",
      display3: "none",
@@ -464,7 +474,7 @@ app.post("/reset-account", async(req,res)=>{
    }));
 
   }else{
-     res.render("index.ejs",({
+     res.render("log-in.ejs",({
      display1: "none",
      display2: "none",
      display3: "none",

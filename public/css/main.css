@@ -1012,9 +1012,14 @@ border: 2px solid;
 
 /*respons*/
 
+
 @media (max-width:1374px){
 
-
+   #log-in{
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px
+   }
 
 
    #crediatials{

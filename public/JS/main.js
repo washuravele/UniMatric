@@ -39,8 +39,17 @@ const electiveGroup = [
   "Geography",
   "Religion Studies",
   "Civil Technology",
-  "EGD",
-  "CAT"
+  "Engineering Graphics & Design",
+  "Computer Applications Technology",
+  "Consumer Studies",
+  "Dramatic Arts",
+  "Music",
+  "Visual Arts",
+  "Tourism",
+  "Information Technology",
+  "Electrical Technology",
+  "Mechanical Technology",
+  "technical science"
 ];
 
 // Helper to build <option> list
@@ -61,16 +70,16 @@ function addSubject() {
       <label class="montserrat">Subject:</label>
       <select class="subjectSelect">
         <option value="">-- Select Subject --</option>
-        <optgroup label="Home Language">
+        <optgroup label="Home Language (Select only 1 subject)">
           ${buildOptions(homeLanguageGroup)}
         </optgroup>
-        <optgroup label="Additional Language">
+        <optgroup label="Additional Language (Select only 1 subject)">
              ${buildOptions(firstAdditionalLanguageGroup)}
         </optgroup>
-        <optgroup label="Compulsory">
+        <optgroup label="Compulsory (Select LO and One subject)">
           ${buildOptions(compulsoryGroup)}
         </optgroup>
-        <optgroup label="Electives">
+        <optgroup label="Electives (Select 3 subjects)">
           ${buildOptions(electiveGroup)}
         </optgroup>
       </select>
@@ -441,18 +450,44 @@ function renderRequirements(course) {
 }
 
 
+async function postWithRetry(url, options, retryDelay = 3000) {
+  while (true) {
+    try {
+      const res = await fetch(url, options);
+
+      const contentType = res.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        throw new Error("API not ready");
+      }
+
+      return await res.json(); // ✅ success
+    } catch (err) {
+      console.log("API waking up… retrying in 3s");
+      await new Promise(resolve => setTimeout(resolve, retryDelay));
+    }
+  }
+}
+
+
+
+document.querySelector("#checkCourses input[type='button']").addEventListener("click", async () => {
   
-
-
-document.querySelector("#checkCourses input[type='button']")
-.addEventListener("click", async () => {
+  const btn = document.querySelector("#checkCourses input[type='button']");
+  btn.disabled = true;          // 🔒 prevent double clicks
+  btn.style.opacity = "0.6";
+  btn.style.cursor = "not-allowed";
+  
+  
   try {
     const subjects = getSelectedSubjects();
     const aps = Number(document.getElementById("aps").textContent);
 
     if (!subjects.length) {
-      alert("Please select at least one subject and enter percentages.");
-      return;
+         alert("Please select at least one subject and enter percentages.");
+         btn.disabled = false;
+         btn.style.opacity = "1";
+         btn.style.cursor = "pointer";
+        return;
     }
 
     validateSubjectSelection(subjects);
@@ -480,18 +515,12 @@ document.querySelector("#checkCourses input[type='button']")
   </div>
 `;
 
-    const res = await fetch("/check-courses", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ subjects, aps })
-    });
+    const data = await postWithRetry("/check-courses", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ subjects, aps })
+});
 
-    const contentType = res.headers.get("content-type");
-
-     if (!contentType || !contentType.includes("application/json")) {
-        throw new Error("Server is waking up. Please wait 30 seconds and try again.");
-    }
-const data = await res.json();
 
 
     /* ❌ REMOVE LOADER */
@@ -508,6 +537,9 @@ const data = await res.json();
           You do not qualify for any courses.
         </p>
       `;
+        btn.disabled = false;
+    btn.style.opacity = "1";
+    btn.style.cursor = "pointer";
       return;
     }
 
@@ -540,9 +572,18 @@ const data = await res.json();
         </div>
       `;
     });
+   
+    btn.disabled = false;
+    btn.style.opacity = "1";
+    btn.style.cursor = "pointer";
+
+
 
   } catch (err) {
     document.getElementById("courseList").innerHTML = "";
+    btn.disabled = false;      
+    btn.style.opacity = "1";
+    btn.style.cursor = "pointer";
     alert(err.message || "Something went wrong. Please check your inputs.");
   }
 });
@@ -580,7 +621,7 @@ document.addEventListener("click", (e) => {
 });
 
 
-
+// page 2 vasity
 
 
 
@@ -704,3 +745,14 @@ $(document).on("click", "#vasityClose", ()=>{
      $("#introImg").css("display","block");
      $("#aboutVasity").css("display","none");
 });
+
+
+
+//page 3 about us 
+var aboutImg = ["Learner-book-reading.jpg","matric-leaners-1.jpg",
+                "matric-leaners-2.jpg","university-buliding.jpg"];
+
+setInterval(()=>{
+   var randomImg = Math.floor(Math.random() * aboutImg.length);
+   $("#about-us-img").css("background-image",`url("/imgs/pictures/${aboutImg[randomImg]}")`);
+},9000);
