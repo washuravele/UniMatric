@@ -523,7 +523,7 @@ document.querySelector("#checkCourses input[type='button']").addEventListener("c
 });
 
 const data = await res.json();
-
+ 
 
 
 
@@ -532,6 +532,9 @@ const data = await res.json();
 
     if (!data.validRequest) {
       alert(`Validation error: ${data.message}`);
+         btn.disabled = false;
+         btn.style.opacity = "1";
+         btn.style.cursor = "pointer";
       return;
     }
 
@@ -541,41 +544,85 @@ const data = await res.json();
           You do not qualify for any courses.
         </p>
       `;
-        btn.disabled = false;
-    btn.style.opacity = "1";
-    btn.style.cursor = "pointer";
+         btn.disabled = false;
+       btn.style.opacity = "1";
+       btn.style.cursor = "pointer";
       return;
     }
+    const courseCount = data.courses.length;
+    courseList.innerHTML = `
+  <p style="
+    text-align:center;
+    font-size:13px;
+    margin-bottom:15px;
+    font-family:Montserrat, sans-serif;
+  ">
+    🎓 <strong>${courseCount}</strong> course${courseCount !== 1 ? "s" : ""} found
+  </p>
+`;
 
-    /* ✅ RENDER COURSES */
-    data.courses.forEach(c => {
-      courseList.innerHTML += `
-        <div class="cardC">
-          <div class="cardImg">
-            <img src="/imgs/logo/${c.acronym}-logo.png" alt="${c.university}">
-          </div>
 
-          <div class="courseInfor" style="font-size:12px;">
-            <div class="basicInfo">
-              <p class="montserrat" style="text-align:center; text-decoration:underline;">
-                <strong>${c.university}</strong>
-              </p>
-              <p class="montserrat" style="text-align:center;">
-                <strong>${c.course}</strong>
-              </p>
-              <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
-              <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
-              <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
-              <p class="montserrat"><strong>Your APS:</strong> ${c.computedAPS}</p>
-            </div>
+     /* ===============================
+         GROUP COURSES BY UNIVERSITY
+      ================================ */
+      const groupedByUniversity = {};
 
-            <div class="requirements" style="display:none; margin-top:8px; font-size:10px;">
-              ${renderRequirements(c)}
-            </div>
-          </div>
-        </div>
-      `;
-    });
+      data.courses.forEach(course => {
+        if (!groupedByUniversity[course.university]) {
+          groupedByUniversity[course.university] = [];
+        }
+        groupedByUniversity[course.university].push(course);
+      });
+
+      /* ===============================
+         RENDER RESULTS
+      ================================ */
+      Object.entries(groupedByUniversity).forEach(
+        ([university, courses]) => {
+
+          // University header + count
+          courseList.innerHTML += `
+            <h3 style="
+              text-align:center;
+              margin:20px 0 10px;
+              font-family:Montserrat, sans-serif;
+              font-size:15px;
+            ">
+              ${university}
+              <span style="font-size:13px; opacity:0.7;">
+                (${courses.length} course${courses.length !== 1 ? "s" : ""})
+              </span>
+            </h3>
+          `;
+
+          // Render cards
+          courses.forEach(c => {
+            courseList.innerHTML += `
+              <div class="cardC">
+                <div class="cardImg">
+                  <img src="/imgs/logo/${c.acronym}-logo.png" alt="${c.university}">
+                </div>
+
+                <div class="courseInfor" style="font-size:12px;">
+                  <div class="basicInfo">
+                    <p class="montserrat" style="text-align:center; text-decoration:underline;">
+                      <strong>${c.course}</strong>
+                    </p>
+                    <p class="montserrat"><strong>Duration:</strong> ${c.duration}</p>
+                    <p class="montserrat"><strong>Faculty:</strong> ${c.faculty}</p>
+                    <p class="montserrat"><strong>Department:</strong> ${c.department}</p>
+                    <p class="montserrat"><strong>Your APS:</strong> ${c.computedAPS}</p>
+                  </div>
+
+                  <div class="requirements" style="display:none; margin-top:8px; font-size:10px;">
+                    ${renderRequirements(c)}
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+        }
+      );
    
     btn.disabled = false;
     btn.style.opacity = "1";
@@ -727,7 +774,7 @@ $(".uniInforCard").on("click", async function () {
 
   <!--vasity pros-->
   <div id="vasityInfor3">
-    <a href="/imgs/logo/nwu-logo.png" download="washu.png">
+    <a href="/prospectus/${data.acronym}-prospectus.pdf" download="${data.acronym}-prospectus.pdf">
       <button  class="montserrat" id="prospectors">${data.acronym.toUpperCase()} Prospectors</button>
     </a>
     <button class="montserrat" id="vasityClose">Close</button>

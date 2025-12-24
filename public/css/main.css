@@ -587,6 +587,14 @@ border: 2px solid;
   background-size: contain;
 }
 
+#up{
+  background-image: url("/imgs/logo/up-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
 
 
 

@@ -1,0 +1,469 @@
+[
+  {
+    "name": "University of Cape Town",
+    "acronym": "uct",
+    "address": [
+      { "campus": "Upper Campus", "physicalAddress": "Rondebosch, Cape Town, 7700" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "31 July 2025" }
+    ],
+    "applicationWebsite": "https://applyonline.uct.ac.za",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.uct.ac.za",
+      "ITS": "https://icts.uct.ac.za",
+      "site": "https://www.uct.ac.za"
+    },
+    "localRanking": { "southAfrica": "1st", "africa": "1st" }
+  },
+
+  {
+    "name": "University of the Witwatersrand",
+    "acronym": "wits",
+    "address": [
+      { "campus": "Braamfontein", "physicalAddress": "Jan Smuts Ave, Johannesburg" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 March 2025", "closingDate": "30 June 2025" }
+    ],
+    "applicationWebsite": "https://www.wits.ac.za/applications",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.wits.ac.za",
+      "ITS": "https://www.wits.ac.za/its",
+      "site": "https://www.wits.ac.za"
+    },
+    "localRanking": { "southAfrica": "3rd", "africa": "4th" }
+  },
+
+  {
+    "name": "University of Pretoria",
+    "acronym": "up",
+    "address": [
+      { "campus": "Hatfield", "physicalAddress": "Lynnwood Rd, Pretoria" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 June 2025" }
+    ],
+    "applicationWebsite": "https://www.up.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://www.up.ac.za/student-centre",
+      "ITS": "https://www.up.ac.za/it",
+      "site": "https://www.up.ac.za"
+    },
+    "localRanking": { "southAfrica": "2nd", "africa": "3rd" }
+  },
+
+  {
+    "name": "University of Johannesburg",
+    "acronym": "uj",
+    "address": [
+      { "campus": "Auckland Park", "physicalAddress": "Kingsway Ave, Johannesburg" }
+    ],
+    "applicationDates": [
+      { "openingDate": "22 January 2025", "closingDate": "25 March 2025" }
+    ],
+    "applicationWebsite": "https://apply.uj.ac.za",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.uj.ac.za",
+      "ITS": "https://www.uj.ac.za/its",
+      "site": "https://www.uj.ac.za"
+    },
+    "localRanking": { "southAfrica": "6th", "africa": "8th" }
+  },
+
+  {
+    "name": "Stellenbosch University",
+    "acronym": "sun",
+    "address": [
+      { "campus": "Stellenbosch", "physicalAddress": "Stellenbosch, Western Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "31 July 2025" }
+    ],
+    "applicationWebsite": "https://www.sun.ac.za/english/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.sun.ac.za",
+      "ITS": "https://www.sun.ac.za/it",
+      "site": "https://www.sun.ac.za"
+    },
+    "localRanking": { "southAfrica": "4th", "africa": "5th" }
+  },
+
+  {
+    "name": "University of KwaZulu-Natal",
+    "acronym": "ukzn",
+    "address": [
+      { "campus": "Westville", "physicalAddress": "Durban, KwaZulu-Natal" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://caes.ukzn.ac.za",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.ukzn.ac.za",
+      "ITS": "https://itservices.ukzn.ac.za",
+      "site": "https://www.ukzn.ac.za"
+    },
+    "localRanking": { "southAfrica": "5th", "africa": "6th" }
+  },
+
+  {
+    "name": "University of the Western Cape",
+    "acronym": "uwc",
+    "address": [
+      { "campus": "Bellville", "physicalAddress": "Robert Sobukwe Rd, Bellville" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.uwc.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.uwc.ac.za",
+      "ITS": "https://www.uwc.ac.za/it",
+      "site": "https://www.uwc.ac.za"
+    },
+    "localRanking": { "southAfrica": "7th", "africa": "10th" }
+  },
+
+  {
+    "name": "Nelson Mandela University",
+    "acronym": "nmu",
+    "address": [
+      { "campus": "Summerstrand", "physicalAddress": "Gqeberha, Eastern Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.mandela.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.mandela.ac.za",
+      "ITS": "https://www.mandela.ac.za/it",
+      "site": "https://www.mandela.ac.za"
+    },
+    "localRanking": { "southAfrica": "8th", "africa": "15th" }
+  },
+
+  {
+    "name": "University of the Free State",
+    "acronym": "ufs",
+    "address": [
+      { "campus": "Bloemfontein", "physicalAddress": "Nelson Mandela Dr, Bloemfontein" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://apply.ufs.ac.za",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.ufs.ac.za",
+      "ITS": "https://www.ufs.ac.za/it",
+      "site": "https://www.ufs.ac.za"
+    },
+    "localRanking": { "southAfrica": "9th", "africa": "18th" }
+  },
+
+  {
+    "name": "North-West University",
+    "acronym": "nwu",
+    "address": [
+      { "campus": "Potchefstroom", "physicalAddress": "Potchefstroom, North West" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://studies.nwu.ac.za",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.nwu.ac.za",
+      "ITS": "https://www.nwu.ac.za/it",
+      "site": "https://www.nwu.ac.za"
+    },
+    "localRanking": { "southAfrica": "10th", "africa": "20th" }
+  },
+
+  {
+    "name": "University of Limpopo",
+    "acronym": "ul",
+    "address": [
+      { "campus": "Turfloop", "physicalAddress": "Mankweng, Limpopo" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.ul.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.ul.ac.za",
+      "ITS": "https://www.ul.ac.za/ict",
+      "site": "https://www.ul.ac.za"
+    },
+    "localRanking": { "southAfrica": "18th", "africa": "60th" }
+  },
+
+  {
+    "name": "University of Venda",
+    "acronym": "univen",
+    "address": [
+      { "campus": "Thohoyandou", "physicalAddress": "University Rd, Thohoyandou" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.univen.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.univen.ac.za",
+      "ITS": "https://www.univen.ac.za/ict",
+      "site": "https://www.univen.ac.za"
+    },
+    "localRanking": { "southAfrica": "20th", "africa": "65th" }
+  },
+
+  {
+    "name": "Walter Sisulu University",
+    "acronym": "wsu",
+    "address": [
+      { "campus": "Mthatha", "physicalAddress": "Mthatha, Eastern Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "31 October 2025" }
+    ],
+    "applicationWebsite": "https://www.wsu.ac.za",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.wsu.ac.za",
+      "ITS": "https://www.wsu.ac.za/it",
+      "site": "https://www.wsu.ac.za"
+    },
+    "localRanking": { "southAfrica": "22nd", "africa": "70th" }
+  },
+  {
+    "name": "Cape Peninsula University of Technology",
+    "acronym": "cput",
+    "address": [
+      { "campus": "Bellville", "physicalAddress": "CPUT Bellville Campus, Western Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "31 August 2025" }
+    ],
+    "applicationWebsite": "https://www.cput.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.cput.ac.za",
+      "ITS": "https://www.cput.ac.za/technology-services",
+      "site": "https://www.cput.ac.za"
+    },
+    "localRanking": { "southAfrica": "11th", "africa": "25th" }
+  },
+
+  {
+    "name": "Central University of Technology",
+    "acronym": "cut",
+    "address": [
+      { "campus": "Bloemfontein", "physicalAddress": "CUT Bloemfontein Campus, Free State" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.cut.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://studentportal.cut.ac.za",
+      "ITS": "https://www.cut.ac.za/ict-services",
+      "site": "https://www.cut.ac.za"
+    },
+    "localRanking": { "southAfrica": "12th", "africa": "30th" }
+  },
+
+  {
+    "name": "Durban University of Technology",
+    "acronym": "dut",
+    "address": [
+      { "campus": "Steve Biko", "physicalAddress": "Durban, KwaZulu-Natal" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "31 August 2025" }
+    ],
+    "applicationWebsite": "https://www.dut.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://mydut.dut.ac.za",
+      "ITS": "https://www.dut.ac.za/its",
+      "site": "https://www.dut.ac.za"
+    },
+    "localRanking": { "southAfrica": "13th", "africa": "35th" }
+  },
+
+  {
+    "name": "University of Fort Hare",
+    "acronym": "ufh",
+    "address": [
+      { "campus": "Alice", "physicalAddress": "Fort Hare Rd, Alice, Eastern Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.ufh.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.ufh.ac.za",
+      "ITS": "https://www.ufh.ac.za/it",
+      "site": "https://www.ufh.ac.za"
+    },
+    "localRanking": { "southAfrica": "14th", "africa": "40th" }
+  },
+
+  {
+    "name": "Mangosuthu University of Technology",
+    "acronym": "mut",
+    "address": [
+      { "campus": "City Campus", "physicalAddress": "Durban, KwaZulu-Natal" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "31 October 2025" }
+    ],
+    "applicationWebsite": "https://www.mut.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.mut.ac.za",
+      "ITS": "https://www.mut.ac.za/ict",
+      "site": "https://www.mut.ac.za"
+    },
+    "localRanking": { "southAfrica": "15th", "africa": "45th" }
+  },
+
+  {
+    "name": "Mpumalanga University",
+    "acronym": "ump",
+    "address": [
+      { "campus": "Nelspruit", "physicalAddress": "R40 Road, Mbombela, Mpumalanga" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "31 October 2025" }
+    ],
+    "applicationWebsite": "https://www.ump.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.ump.ac.za",
+      "ITS": "https://www.ump.ac.za/its",
+      "site": "https://www.ump.ac.za"
+    },
+    "localRanking": { "southAfrica": "23rd", "africa": "80th" }
+  },
+
+  {
+    "name": "Rhodes University",
+    "acronym": "ru",
+    "address": [
+      { "campus": "Grahamstown", "physicalAddress": "Rhodes Ave, Grahamstown, Eastern Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.ru.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.ru.ac.za",
+      "ITS": "https://www.ru.ac.za/its",
+      "site": "https://www.ru.ac.za"
+    },
+    "localRanking": { "southAfrica": "16th", "africa": "50th" }
+  },
+
+  {
+    "name": "Sefako Makgatho Health & Sciences University",
+    "acronym": "smu",
+    "address": [
+      { "campus": "Medunsa", "physicalAddress": "Ga-Rankuwa, Gauteng" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.smu.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.smu.ac.za",
+      "ITS": "https://www.smu.ac.za/its",
+      "site": "https://www.smu.ac.za"
+    },
+    "localRanking": { "southAfrica": "17th", "africa": "55th" }
+  },
+
+  {
+    "name": "Sol Plaatje University",
+    "acronym": "spu",
+    "address": [
+      { "campus": "Kimberley", "physicalAddress": "Hartswater Rd, Kimberley, Northern Cape" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.spu.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://student.spu.ac.za",
+      "ITS": "https://www.spu.ac.za/it",
+      "site": "https://www.spu.ac.za"
+    },
+    "localRanking": { "southAfrica": "19th", "africa": "75th" }
+  },
+
+  {
+    "name": "University of South Africa",
+    "acronym": "unisa",
+    "address": [
+      { "campus": "Muckleneuk", "physicalAddress": "Pretoria, Gauteng" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 February 2025", "closingDate": "31 October 2025" }
+    ],
+    "applicationWebsite": "https://www.unisa.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://my.unisa.ac.za",
+      "ITS": "https://www.unisa.ac.za/its",
+      "site": "https://www.unisa.ac.za"
+    },
+    "localRanking": { "southAfrica": "Top distance learning", "africa": "Broadest reach" }
+  },
+
+  {
+    "name": "Tshwane University of Technology",
+    "acronym": "tut",
+    "address": [
+      { "campus": "Pretoria", "physicalAddress": "Pretoria West, Gauteng" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "31 August 2025" }
+    ],
+    "applicationWebsite": "https://www.tut.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://mytut.tut.ac.za",
+      "ITS": "https://www.tut.ac.za/its",
+      "site": "https://www.tut.ac.za"
+    },
+    "localRanking": { "southAfrica": "14th", "africa": "38th" }
+  },
+
+  {
+    "name": "Vaal University of Technology",
+    "acronym": "vut",
+    "address": [
+      { "campus": "Vanderbijlpark", "physicalAddress": "Vanderbijlpark, Gauteng" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 April 2025", "closingDate": "31 August 2025" }
+    ],
+    "applicationWebsite": "https://www.vut.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://studentportal.vut.ac.za",
+      "ITS": "https://www.vut.ac.za/it",
+      "site": "https://www.vut.ac.za"
+    },
+    "localRanking": { "southAfrica": "13th", "africa": "34th" }
+  },
+
+  {
+    "name": "University of Zululand",
+    "acronym": "unizulu",
+    "address": [
+      { "campus": "Kwadlangezwa", "physicalAddress": "KwaDlangezwa, KwaZulu-Natal" }
+    ],
+    "applicationDates": [
+      { "openingDate": "1 May 2025", "closingDate": "30 September 2025" }
+    ],
+    "applicationWebsite": "https://www.unizulu.ac.za/apply",
+    "varsityOfficialSite": {
+      "selfCheck": "https://students.unizulu.ac.za",
+      "ITS": "https://www.unizulu.ac.za/its",
+      "site": "https://www.unizulu.ac.za"
+    },
+    "localRanking": { "southAfrica": "21st", "africa": "68th" }
+  }
+  
+]

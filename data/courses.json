@@ -1,0 +1,4457 @@
+[
+  
+
+  {
+    "id": "01",
+    "name": "Vaal University of Technology",
+    "acronym": "vut",
+    "Faculty": "Faculty of Applied & Computer Sciences",
+    "Department": "DEPARTMENT OF NATURAL SCIENCES",
+    "courses": [
+      {
+        "name": "Dip: Analytical Chemistry",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+            { "subject": "Physical Sciences", "minLevel": 4 }
+          ],
+          "additionalSubjects": { "count": 3, "note": "Any other subjects excluding LO" },
+          "apsOptions": [{ "minScore": 21, "note": "exclude LO" }]
+        }
+      },
+      {
+        "name": "Dip: Biotechnology",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+            { "subject": "Physical Sciences", "minLevel": 4 },
+            { "subject": "Life Sciences", "minLevel": 4 }
+          ],
+          "apsOptions": [{ "minScore": 23, "note": "exclude LO" }]
+        }
+      },
+      {
+        "name": "Dip: Agricultural Management",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+            { "subject": "Agriculture or Life Sciences", "minLevel": 3 }
+          ],
+          "apsOptions": [
+            { "minScore": 21, "note": "Maths/Tech Maths, exclude LO" },
+            { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+          ]
+        }
+      },
+      {
+        "name": "Dip: Environmental Science",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics", "minLevel": 4 },
+            { "subject": "Physical Sciences", "minLevel": 4 }
+          ],
+          "apsOptions": [{ "minScore": 21, "note": "exclude LO" }]
+        }
+      },
+      {
+        "name": "Bachelor of Health Sciences: Medical Laboratory Science",
+        "duration": "4 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics", "minLevel": 4 },
+            { "subject": "Physical Sciences", "minLevel": 4 },
+            { "subject": "Life Sciences", "minLevel": 5 }
+          ],
+          "apsOptions": [{ "minScore": 27, "note": "exclude LO" }]
+        }
+      }
+    ]
+  },
+
+  {
+    "id": "01",
+    "name": "Vaal University of Technology",
+    "acronym": "vut",
+    "Faculty": "Faculty of Applied & Computer Sciences",
+    "Department": "DEPARTMENT OF COMPUTER SCIENCES",
+    "courses": [
+      {
+        "name": "Dip: Information Technology",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+          ],
+          "additionalSubjects": { "count": 4, "note": "Any other subjects excluding LO" },
+          "apsOptions": [
+            { "minScore": 26, "note": "Maths/Tech Maths, exclude LO" },
+            { "minScore": 28, "note": "Maths Literacy, exclude LO" }
+          ]
+        }
+      },
+      {
+        "name": "Dip: Extended Information Technology Programme",
+        "duration": "4 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+          ],
+          "additionalSubjects": { "count": 4, "note": "Any other subjects excluding LO" },
+          "apsOptions": [
+            { "minScore": 24, "note": "Maths/Tech Maths, exclude LO" },
+            { "minScore": 26, "note": "Maths Literacy, exclude LO" }
+          ]
+        }
+      }
+    ]
+  },
+
+  {
+    "id": "01",
+    "name": "Vaal University of Technology",
+    "acronym": "vut",
+    "Faculty": "Faculty of Management Sciences",
+    "Department": "Department of Accountancy",
+    "courses": [
+      {
+        "name": "Dip: Financial Info. Systems",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Accounting", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+          ],
+          "apsOptions": [
+            { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+            { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+          ]
+        }
+      },
+      {
+        "name": "Dip: Cost & Man Accounting",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Accounting", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+          ],
+          "apsOptions": [
+            { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+            { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+          ]
+        }
+      },
+      {
+        "name": "Dip: Internal Auditing",
+        "duration": "3 years",
+        "requirements": {
+          "compulsory": [
+            { "subject": "English", "minLevel": 4 },
+            { "subject": "Accounting", "minLevel": 4 },
+            { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+          ],
+          "apsOptions": [
+            { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+            { "minScore": 23, "note": "Maths Literacy, exclude LO" }
+          ]
+        }
+      }
+    ]
+  },
+
+  {
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Human Sciences",
+  "Department": "Various",
+  "courses": [
+    {
+      "name": "Dip: Fashion, Photography, Graphic Design & Fine Art",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 2 }
+        ],
+        "apsOptions": [
+          { "minScore": 21, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Food Service Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Hospitality / Tourism / Catering / Accounting / Business / Consumer Studies", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 21, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Tourism Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Tourism / Geography / Business Studies / History", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 21, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Public Relations",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Other Language", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 21, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Ecotourism Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 21, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Legal Assistance",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Other Language", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 23, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 24, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Labour Law",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Other Language", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 23, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 24, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Safety Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Other Language", "minLevel": 3 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 21, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Policing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Other Language", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 21, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "B Ed (Senior Phase & FET Teaching)",
+      "duration": "-",
+      "requirements": {
+        "compulsory": [
+          { "subject": "Language of Teaching & Learning", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 24, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Communication Studies",
+      "duration": "-",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 2 },
+          { "subject": "Additional Language", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 21, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Department of Civil Engineering",
+  "courses": [
+    {
+      "name": "Dip: Civil Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Department of Electrical Engineering",
+  "courses": [
+    {
+      "name": "Dip: Electrical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Department of Mechanical Engineering",
+  "courses": [
+    {
+      "name": "Dip: Mechanical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Department of Industrial Engineering & Operations Management",
+  "courses": [
+    {
+      "name": "Dip: Industrial Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Dip: Operations Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Department of Chemical Engineering",
+  "courses": [
+    {
+      "name": "Dip: Chemical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Extended Programme: Civil Engineering",
+  "courses": [
+    {
+      "name": "Dip: Civil Engineering (Extended)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Extended Programme: Electrical Engineering",
+  "courses": [
+    {
+      "name": "Dip: Electrical Engineering (Extended)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Extended Programme: Mechanical Engineering",
+  "courses": [
+    {
+      "name": "Dip: Mechanical Engineering (Extended)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Engineering & Technology",
+  "Department": "Extended Programme: Chemical Engineering",
+  "courses": [
+    {
+      "name": "Dip: Chemical Engineering (Extended)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences or Technical Science", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "01",
+  "name": "Vaal University of Technology",
+  "acronym": "vut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Department of Nursing",
+  "courses": [
+    {
+      "name": "Diploma in Nursing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 21, "note": "Maths/Tech Maths, exclude LO" },
+          { "minScore": 22, "note": "Maths Literacy, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Economics and Finance",
+  "Department": "Accounting",
+  "courses": [
+    {
+      "name": "Diploma in Accounting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Accounting or Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Accounting or Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    },
+    {
+      "name": "Higher Certificate in Accounting",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 23, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Economics and Finance",
+  "Department": "Economics",
+  "courses": [
+    {
+      "name": "Diploma in Economics",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Economics and Finance",
+  "Department": "Financial Management",
+  "courses": [
+    {
+      "name": "Diploma in Financial Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Accounting or Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Accounting or Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Economics and Finance",
+  "Department": "Financial Planning",
+  "courses": [
+    {
+      "name": "Diploma in Financial Planning",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Accounting or Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Accounting or Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Economics and Finance",
+  "Department": "Internal Auditing",
+  "courses": [
+    {
+      "name": "Diploma in Internal Auditing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Accounting or Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Accounting or Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Economics and Finance",
+  "Department": "Public Finance",
+  "courses": [
+    {
+      "name": "Diploma in Public Finance",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Accounting or Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 23, "note": "with Accounting" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Civil Engineering",
+  "courses": [
+    {
+      "name": "BEngTech in Civil Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Dip in Building Science",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Dip in Geomatics",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 23, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Chemical Engineering",
+  "courses": [
+    {
+      "name": "BEngTech in Chemical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Electrical Engineering",
+  "courses": [
+    {
+      "name": "BEngTech in Electrical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Dip in Electrical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Mechanical & Industrial Engineering",
+  "courses": [
+    {
+      "name": "BEngTech in Mechanical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "BEngTech in Industrial Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "BEngTech in Mechatronics Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Metallurgical Engineering",
+  "courses": [
+    {
+      "name": "BEngTech in Metallurgical Engineering (Polymer Technology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Civil Engineering",
+  "courses": [
+    {
+      "name": "Higher Certificate in Construction Engineering: Material Test",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Higher Certificate in Construction Engineering: Water and Waste",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Electrical Engineering",
+  "courses": [
+    {
+      "name": "Higher Certificate in Electrical Engineering",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Industrial Engineering",
+  "courses": [
+    {
+      "name": "Higher Certificate in Industrial Engineering",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Mechanical Engineering",
+  "courses": [
+    {
+      "name": "Higher Certificate in Mechanical Engineering",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Humanities",
+  "Department": "Education",
+  "courses": [
+    {
+      "name": "BEd Foundation Phase Teaching",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "Home Language", "minLevel": 5 },
+          { "subject": "First Additional Language", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Mathematical Literacy", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "BEd Intermediate Phase Teaching",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English (Home Language or First Additional Language)", "minLevel": 4 },
+          { "subject": "Any other Home Language offered in the programme", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Mathematical Literacy", "minLevel": 5 },
+          { "subject": "Life Sciences or Physical Sciences or History or Geography", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "BEd Senior Phase & FET Teaching",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English (Language of Teaching & Learning)", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 },
+          { "subject": "Physical Sciences or Technical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Humanities",
+  "Department": "Performing Arts",
+  "courses": [
+    {
+      "name": "Diploma in Performing Arts (Dance)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Performing Arts (Jazz Music)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Performing Arts (Opera)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Performing Arts (Technical Theatre and Design)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Performing Arts (Theatre Arts and Performance)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Higher Certificate in Music",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 18, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Photography",
+  "courses": [
+    {
+      "name": "Diploma in Commercial Photography",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Fashion Design",
+  "courses": [
+    {
+      "name": "Diploma in Fashion Design and Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Fine and Applied Arts",
+  "courses": [
+    {
+      "name": "Diploma in Fine and Applied Arts",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Communication Design",
+  "courses": [
+    {
+      "name": "Diploma in Integrated Communication Design",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Interior Design",
+  "courses": [
+    {
+      "name": "Diploma in Interior Design",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Jewellery Design",
+  "courses": [
+    {
+      "name": "Diploma in Jewellery Design and Manufacture",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Motion Picture Production",
+  "courses": [
+    {
+      "name": "Diploma in Motion Picture Production",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Arts and Design",
+  "Department": "Industrial Design",
+  "courses": [
+    {
+      "name": "Diploma in Industrial Design",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 21, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Science",
+  "Department": "Information and Communication Technology",
+  "courses": [
+    {
+      "name": "Diploma in Computer Science",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 26, "note": "with Mathematical Literacy" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Informatics",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 26, "note": "with Mathematical Literacy" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Information Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 28, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Science",
+  "Department": "Mathematics and Statistics",
+  "courses": [
+    {
+      "name": "Diploma in Mathematical Sciences",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Accounting or Business Studies or Economics or Geography", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Science",
+  "Department": "Biotechnology and Chemistry",
+  "courses": [
+    {
+      "name": "Diploma in Biotechnology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences or Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Analytical Chemistry",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Nursing",
+  "courses": [
+    {
+      "name": "Bachelor of Nursing",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Emergency Medical Care",
+  "courses": [
+    {
+      "name": "Diploma in Emergency Medical Care",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Emergency Medical Care",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Radiography",
+  "courses": [
+    {
+      "name": "Bachelor of Diagnostic Radiography",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Diagnostic Ultrasound",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Nuclear Medicine Technology",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Radiation Therapy",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Dental Technology",
+  "courses": [
+    {
+      "name": "Bachelor of Dental Technology",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Higher Certificate in Dental Assisting",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Life Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 20, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Somatology",
+  "courses": [
+    {
+      "name": "Diploma in Somatology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "Mainstream entry" }
+        ]
+      }
+    },
+    {
+      "name": "Advanced Diploma in Somatology",
+      "duration": "1 year",
+      "requirements": {
+        "compulsory": [
+          { "subject": "Diploma in Somatology", "minLevel": 0 }
+        ],
+        "apsOptions": [
+          { "minScore": 0, "note": "Progression from Diploma" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Opticianry",
+  "courses": [
+    {
+      "name": "Bachelor of Opticianry",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 25, "note": "Mainstream entry" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Management Sciences",
+  "Department": "Public Management",
+  "courses": [
+    {
+      "name": "Diploma in Public Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Business Studies or Economics or Accounting", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+}
+,
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Management Sciences",
+  "Department": "Human Resource Management",
+  "courses": [
+    {
+      "name": "Diploma in Human Resource Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Business Studies or Economics or Accounting", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Management Sciences",
+  "Department": "Marketing",
+  "courses": [
+    {
+      "name": "Diploma in Marketing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Business Studies or Economics or Accounting", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Management Sciences",
+  "Department": "Office Management and Technology",
+  "courses": [
+    {
+      "name": "Diploma in Office Management and Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Business Studies or Economics or Accounting", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Management Sciences",
+  "Department": "Supply Chain Management",
+  "courses": [
+    {
+      "name": "Diploma in Supply Chain Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 3 },
+          { "subject": "Business Studies or Economics or Accounting", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 24, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Information and Communication Technology",
+  "Department": "Computer Science",
+  "courses": [
+    {
+      "name": "Diploma in Computer Science",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 26, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Information and Communication Technology",
+  "Department": "Informatics",
+  "courses": [
+    {
+      "name": "Diploma in Informatics",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 26, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Information and Communication Technology",
+  "Department": "Information Technology",
+  "courses": [
+    {
+      "name": "Diploma in Information Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 28, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Information and Communication Technology",
+  "Department": "Multimedia",
+  "courses": [
+    {
+      "name": "Diploma in Multimedia Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 26, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+{
+  "id": "03",
+  "name": "Tshwane University of Technology",
+  "acronym": "tut",
+  "Faculty": "Faculty of Information and Communication Technology",
+  "Department": "Software Development",
+  "courses": [
+    {
+      "name": "Diploma in Software Development",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Technical Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "with Mathematics/Technical Mathematics" },
+          { "minScore": 26, "note": "with Mathematical Literacy" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "id": "04",
+  "name": "University of Venda",
+  "acronym": "univen",
+  "Faculty": "Faculty of Humanities, Social Sciences and Education",
+  "Department": "Humanities and Social Sciences",
+  "courses": [
+    {
+      "name": "Bachelor of Arts",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Media Studies)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Development Studies)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "History or Economics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Indigenous Knowledge Systems",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts in Language Practice",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "African Language", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts in International Relations",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "History or Economics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Social Work",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "04",
+  "name": "University of Venda",
+  "acronym": "univen",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Health Sciences",
+  "courses": [
+    {
+      "name": "Bachelor of Nursing",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO, selection test & physical assessment" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Nursing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO, selection test & physical assessment" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Nutrition",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Physical Sciences or Agricultural Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Biokinetics",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Sports and Exercise Science",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Psychology",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO, selection test" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "04",
+  "name": "University of Venda",
+  "acronym": "univen",
+  "Faculty": "Faculty of Management, Commerce and Law",
+  "Department": "Management, Commerce and Law",
+  "courses": [
+    {
+      "name": "Bachelor of Administration",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Accounting Sciences)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 35, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Accounting)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Accounting or Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Business Information Systems)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Business Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Business Studies", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Economics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Economics or Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Human Resource Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Tourism Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Laws (LLB)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Criminal Justice)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "04",
+  "name": "University of Venda",
+  "acronym": "univen",
+  "Faculty": "Faculty of Science, Engineering and Agriculture",
+  "Department": "Science, Engineering and Agriculture",
+  "courses": [
+    {
+      "name": "Diploma in Freshwater Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Life Sciences or Agricultural Sciences or Physical Sciences or Geography", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+
+    {
+      "name": "BSc in Biochemistry and Microbiology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Biochemistry and Biology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Microbiology and Botany",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Mathematics and Applied Mathematics",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Computer Science",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+
+    {
+      "name": "Extended BSc in Computer Science",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "extended programme, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Extended BSc in Mathematics and Applied Mathematics",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 3 },
+          { "subject": "Physical Sciences", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "extended programme, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "id": "05",
+  "name": "University of Johannesburg",
+  "acronym": "uj",
+  "Faculty": "Faculty of Science",
+  "Department": "Science",
+  "courses": [
+    {
+      "name": "BSc (Mathematical Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Physical Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Life and Environmental Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Computer Science and Informatics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Extended BSc (Science)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 24, "note": "extended programme, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "05",
+  "name": "University of Johannesburg",
+  "acronym": "uj",
+  "Faculty": "Faculty of Engineering and the Built Environment",
+  "Department": "Engineering and Built Environment",
+  "courses": [
+    {
+      "name": "Bachelor of Engineering (Electrical Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Engineering (Mechanical Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Engineering (Civil Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Engineering (Industrial Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Engineering (Chemical Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "exclude LO" }
+        ]
+      }
+    },
+
+    {
+      "name": "Diploma in Electrical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Civil Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Mechanical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "05",
+  "name": "University of Johannesburg",
+  "acronym": "uj",
+  "Faculty": "College of Business and Economics",
+  "Department": "Business and Economics",
+  "courses": [
+    {
+      "name": "Bachelor of Commerce (Accounting)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Accounting Sciences)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Economics and Econometrics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Information Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Logistics Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Human Resource Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Marketing Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Tourism Management)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Accounting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Business Information Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 22, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "05",
+  "name": "University of Johannesburg",
+  "acronym": "uj",
+  "Faculty": "Faculty of Humanities",
+  "Department": "Humanities",
+  "courses": [
+    {
+      "name": "Bachelor of Arts",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (International Relations)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "History or Geography", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Psychology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Social Work",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "exclude LO, selection process" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Languages)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Additional Language", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Communication Studies)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Politics, Economics and Technology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "05",
+  "name": "University of Johannesburg",
+  "acronym": "uj",
+  "Faculty": "Faculty of Education",
+  "Department": "Education",
+  "courses": [
+    {
+      "name": "Bachelor of Education (Foundation Phase Teaching)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO, selection process" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Education (Intermediate Phase Teaching)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "exclude LO, selection process" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Education (Senior Phase and FET Teaching)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Teaching Subject", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "exclude LO, subject combination rules apply" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Education (Early Childhood Development)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "exclude LO, selection process" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+
+{
+  "id": "ufs-ems",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Economic and Management Sciences",
+  "Department": "Economic and Management Sciences",
+  "courses": [
+    {
+      "name": "Bachelor of Administration (BAdmin)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 2 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS, Mathematics Literacy acceptable at Level 5" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (BCom)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "BCom with specialisation in Economics",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "BCom with specialisation in Finance",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "BCom with specialisation in Business Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "BCom with specialisation in Marketing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "BCom with specialisation in Human Resource Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "BCom (Law)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 33, "note": "NSC APS" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Accounting (BAcc)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "NSC APS" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "ufs-nas",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Natural and Agricultural Sciences",
+  "Department": "Natural and Agricultural Sciences",
+  "courses": [
+    {
+      "name": "Bachelor of Science (BSc)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Biological Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Chemical and Physical Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Computer Science and Informatics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Geosciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Science in Agriculture (BSc Agric)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences or Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Architecture",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, selection and portfolio required" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+
+
+
+
+
+
+{
+  "id": "ufs-hum",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Humanities",
+  "Department": "Humanities",
+  "courses": [
+    {
+      "name": "Bachelor of Arts (BA)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BA (Language Practice)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Additional Language", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BA (Psychology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BA (Politics, Philosophy and Economics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "History or Economics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Social Work",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "NSC APS, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Criminology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "ufs-edu",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Education",
+  "Department": "Education",
+  "courses": [
+    {
+      "name": "Bachelor of Education (Foundation Phase)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Education (Intermediate Phase)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Education (Senior Phase and FET)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Teaching Subject", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO, subject combination rules apply" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Education (Early Childhood Education)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "ufs-health",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Health Sciences",
+  "courses": [
+    {
+      "name": "MBChB (Medicine)",
+      "duration": "5 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 },
+          { "subject": "Life Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "NSC APS, exclude LO, NBT & selection process apply" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Nursing",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Dietetics",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Physiotherapy",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "BSc in Occupational Therapy",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "NSC APS, exclude LO, selection process applies" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "ufs-law",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Law",
+  "Department": "Law",
+  "courses": [
+    {
+      "name": "Bachelor of Laws (LLB)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BA (Law)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BCom (Law)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "ufs-theology",
+  "name": "University of the Free State",
+  "acronym": "ufs",
+  "Faculty": "Faculty of Theology & Religion",
+  "Department": "Theology and Religion",
+  "courses": [
+    {
+      "name": "Bachelor of Theology (BTh)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Divinity (BDiv)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "NSC APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "cput-eng",
+  "name": "Cape Peninsula University of Technology",
+  "acronym": "cput",
+  "Faculty": "Faculty of Engineering & the Built Environment",
+  "Department": "Engineering and Built Environment",
+  "courses": [
+    {
+      "name": "Diploma in Civil Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Electrical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Mechanical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Chemical Engineering",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Architectural Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO, portfolio may be required" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+
+{
+  "id": "cput-infodes",
+  "name": "Cape Peninsula University of Technology",
+  "acronym": "cput",
+  "Faculty": "Faculty of Informatics & Design",
+  "Department": "Informatics and Design",
+  "courses": [
+    {
+      "name": "Diploma in Information Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Applications Development",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Business Information Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Multimedia",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO, portfolio may be required" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Graphic Design",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO, portfolio required" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Fashion",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO, selection applies" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "cput-bms",
+  "name": "Cape Peninsula University of Technology",
+  "acronym": "cput",
+  "Faculty": "Faculty of Business & Management Sciences",
+  "Department": "Business and Management Sciences",
+  "courses": [
+    {
+      "name": "Diploma in Accounting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Financial Accounting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Cost and Management Accounting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Business Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Marketing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Public Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Tourism Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Human Resource Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "id": "cput-applied",
+  "name": "Cape Peninsula University of Technology",
+  "acronym": "cput",
+  "Faculty": "Faculty of Applied Sciences",
+  "Department": "Applied Sciences",
+  "courses": [
+    {
+      "name": "Diploma in Biotechnology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Environmental Management",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics or Mathematical Literacy", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Food Technology",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Analytical Chemistry",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 30, "note": "Diploma pass, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Nature Conservation",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 3 }
+        ],
+        "apsOptions": [
+          { "minScore": 26, "note": "Diploma pass, exclude LO, selection may apply" }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
+{
+  "id": "cput-health",
+  "name": "Cape Peninsula University of Technology",
+  "acronym": "cput",
+  "Faculty": "Faculty of Health & Wellness Sciences",
+  "Department": "Health and Wellness Sciences",
+  "courses": [
+    {
+      "name": "Diploma in Nursing",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "Diploma pass, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Emergency Medical Care",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "Diploma pass, exclude LO, fitness & selection apply" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Dental Assisting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 28, "note": "Diploma pass, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Diploma in Radiography",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 4 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Physical Sciences", "minLevel": 4 }
+        ],
+        "apsOptions": [
+          { "minScore": 32, "note": "Diploma pass, exclude LO, selection process applies" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "wits-clm",
+  "name": "University of the Witwatersrand",
+  "acronym": "wits",
+  "Faculty": "Faculty of Commerce, Law & Management",
+  "Department": "Commerce, Law and Management",
+  "courses": [
+    {
+      "name": "Bachelor of Commerce (General)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Information Systems)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce (Politics, Philosophy and Economics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Accounting Science",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 44, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Accounting",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Economic Science",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 7 }
+        ],
+        "apsOptions": [
+          { "minScore": 42, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Commerce with Law",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 43, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Laws (LLB)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 46, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "wits-ebe",
+  "name": "University of the Witwatersrand",
+  "acronym": "wits",
+  "Faculty": "Faculty of Engineering & the Built Environment",
+  "Department": "Engineering and Built Environment",
+  "courses": [
+    {
+      "name": "Bachelor of Science in Engineering (Civil Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 42, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Science in Engineering (Electrical Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 42, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Science in Engineering (Mechanical Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 42, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Science in Engineering (Chemical Engineering)",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 43, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Architectural Studies",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO, portfolio required" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Science in Construction Studies",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "wits-sci",
+  "name": "University of the Witwatersrand",
+  "acronym": "wits",
+  "Faculty": "Faculty of Science",
+  "Department": "Science",
+  "courses": [
+    {
+      "name": "Bachelor of Science (General)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Mathematics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Mathematics and Computer Science)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Computer Science)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Physics)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Chemistry)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Biological Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "BSc (Geological Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "id": "wits-hum",
+  "name": "University of the Witwatersrand",
+  "acronym": "wits",
+  "Faculty": "Faculty of Humanities",
+  "Department": "Humanities",
+  "courses": [
+    {
+      "name": "Bachelor of Arts (BA)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (PPE)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (International Relations)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Social Work",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 40, "note": "Wits APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (Psychology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 38, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Arts (African Literature)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 34, "note": "Wits APS, exclude LO" }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "id": "wits-health",
+  "name": "University of the Witwatersrand",
+  "acronym": "wits",
+  "Faculty": "Faculty of Health Sciences",
+  "Department": "Health Sciences",
+  "courses": [
+    {
+      "name": "MBChB (Medicine)",
+      "duration": "6 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 },
+          { "subject": "Life Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 46, "note": "Wits APS, exclude LO, NBT & selection process apply" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Health Sciences (BHSc)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 },
+          { "subject": "Mathematics", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 42, "note": "Wits APS, exclude LO, selection process applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Health Sciences (Physiology & Psychology)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 },
+          { "subject": "Mathematics", "minLevel": 5 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 44, "note": "Wits APS, exclude LO, selection applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Health Sciences (Biomedical Sciences)",
+      "duration": "3 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 6 },
+          { "subject": "Mathematics", "minLevel": 6 },
+          { "subject": "Physical Sciences", "minLevel": 6 }
+        ],
+        "apsOptions": [
+          { "minScore": 44, "note": "Wits APS, exclude LO, selection applies" }
+        ]
+      }
+    },
+    {
+      "name": "Bachelor of Nursing",
+      "duration": "4 years",
+      "requirements": {
+        "compulsory": [
+          { "subject": "English", "minLevel": 5 },
+          { "subject": "Mathematics", "minLevel": 4 },
+          { "subject": "Life Sciences", "minLevel": 5 }
+        ],
+        "apsOptions": [
+          { "minScore": 36, "note": "Wits APS, exclude LO, selection process applies" }
+        ]
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

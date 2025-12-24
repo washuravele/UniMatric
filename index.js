@@ -19,6 +19,19 @@ const __dirname = path.dirname(__filename);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+import fs from "fs";
+
+
+
+// ✅ LOAD COURSES LOCALLY (ONCE)
+const universities = JSON.parse(
+  fs.readFileSync(
+    path.join(__dirname, "data", "courses.json"),
+    "utf8"
+  )
+);
+
+//console.log("✅ Universities data loaded:", universities.length);
 
 /*const db = new PG.Client({
    user:"postgres",
@@ -51,7 +64,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(e.json());
 
 
-const vasityInfor = [
+/*const vasityInfor = [
   {
     name: "University of Johannesburg",
     acronym: "uj",
@@ -101,8 +114,13 @@ const vasityInfor = [
   }
 
 
-];
-
+];*/
+const vasityInfor = JSON.parse(
+  fs.readFileSync(
+    path.join(__dirname, "data", "universities.json"),
+    "utf8"
+  )
+);
 
 
 
@@ -126,7 +144,6 @@ var greetings = "";
 var hours = new Date().getHours();
 
 
-console.log(hours);
 
 if(hours <13){
    greetings = "Good Morning";
@@ -361,18 +378,6 @@ app.post("/check-courses", async (req, res) => {
   const serverAPS = computeAPS(enriched);
 
   const qualifiedCourses = [];
- let universities;
-try {
-  universities = await getWithRetry(
-    "https://south-africa-universities-courses-api.onrender.com/universitiesCoursers"
-  );
-} catch (err) {
-  return res.json({
-    validRequest: false,
-    message: "Courses service is waking up. Please wait a moment and try again."
-  });
-}
-
 
   for (const uni of universities) {
     for (const course of uni.courses) {
@@ -385,7 +390,7 @@ try {
           duration: course.duration,
           computedAPS: serverAPS,
           requirements: course.requirements,
-          acronym:uni.acronym
+          acronym: uni.acronym
         });
       }
     }
@@ -401,12 +406,12 @@ try {
 
 
 
+
 app.post("/vasity-infor", async (req, res) => {
 
    try {
     // Get the university ID/name from request body
     const uniIDName = req.body.uniID[0];
-    console.log(uniIDName)
 
     // Find the university in your dataset
     const university = vasityInfor.find(
