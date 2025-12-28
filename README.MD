@@ -144,9 +144,7 @@ UniMatric/
 * Save learner profiles and results
 * Admin dashboard for managing courses and requirements
 * API integration for third‑party platforms
-* Improved analytics and reporting
-
----
+* Improved analytics a
 
 ## 👨‍💻 Author
 
