@@ -154,7 +154,6 @@ UniMatric/
 Aspiring Software Developer
 
 * GitHub: [https://github.com/washuravele](https://github.com/washuravele)
-* LinkedIn: (add your LinkedIn link)
 
 ---
 
